@@ -1,0 +1,9 @@
+.article {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px 24px 0;
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+  grid-template-rows: auto;
+  grid-template-areas: "author article";
+}
