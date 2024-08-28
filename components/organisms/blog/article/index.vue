@@ -86,7 +86,7 @@ const { data } = defineProps<BlogDataTypes>()
             class="image"
             :src="data.blog[0].image"
             :alt="data.blog[0].alt"
-            sizes="100vw xs:200px sm:200px"
+            sizes="100vw xs:400px sm:500px"
             format="webp"
           />
 
