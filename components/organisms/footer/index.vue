@@ -24,7 +24,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <footer class="content">
+  <footer class="footer-content">
 
     <LogoSvg class="logo" />
     <h2 class="title">Vanguardia.tech</h2>

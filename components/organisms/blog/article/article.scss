@@ -1,9 +1,219 @@
-.article {
+.blog-article {
+  display: grid;
+  grid-template-columns: minmax(auto, 18.9%) minmax(0, 1fr) auto;
+  grid-template-areas: "author article info-box";
+  gap: 20px;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 24px 24px 0;
-  display: grid;
-  grid-template-columns: 0.2fr 0.8fr;
-  grid-template-rows: auto;
-  grid-template-areas: "author article";
+  padding: 120px 40px 0;
+
+  .author {
+    grid-area: author;
+    position: sticky;
+    top: 100px;
+
+    .heading {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 32px;
+
+      .image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+
+      .author-name {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+    }
+
+    .description {
+      font-size: .93rem;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 16px;
+    }
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-area: article;
+    border-bottom: none;
+
+    .heading {
+      grid-area: title;
+      padding: 16px 0 0 16px;
+
+      .date {
+        font-style: italic;
+        color: var(--text);
+      }
+
+      .title {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bold;
+        color: var(--heading);
+        line-height: 3rem;
+
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    .content {
+      grid-area: content;
+      padding: 16px 0 0 16px;
+
+      .summary::before {
+        content: "Breve Resumen ↬ ";
+        display: inline;
+        font-style: normal;
+        letter-spacing: 2px;
+        font-size: 0.75em;
+        margin: 0;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--danger);
+      }
+
+      .summary {
+        font-style: italic;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .image {
+        margin: 24px 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .step {
+
+        .title {
+          font-size: 24px;
+          padding: 8px 0;
+          color: var(--primary);
+        }
+
+        .description {
+          outline: 1px solid red;
+          strong {
+            font-weight: 600;
+            color: red;
+          }
+        }
+
+        .list {
+          padding-bottom: 10px;
+  
+          li::before {
+            content: "↬";
+            display: inline;
+            font-style: normal;
+            letter-spacing: 2px;
+            font-size: 1em;
+            padding-left: 16px;
+            margin: 0;
+            font-weight: 600;
+            color: var(--red);
+          }
+  
+          li {
+            list-style-type: none;
+          }
+  
+          @media (max-width: 768px) {
+            li::before {
+              padding-left: 0;
+            }
+          }
+        }
+  
+        .code {
+          font-family: monospace;
+          font-size: 1em;
+          line-height: 1.6;
+          margin: 1em 0;
+          width: 100%;
+          padding: 10px 8px;
+          display: block;
+          border-radius: 16px;
+          overflow: auto;
+          overflow-wrap: normal;
+          padding: 1em;
+          white-space: pre-line;
+          word-wrap: normal;
+          color: red;
+        }
+  
+        .image {
+          max-height: 300px;
+          height: 100%;
+        }
+  
+        .link {
+          a {
+            color: var(--primary);
+          }
+        }
+      }
+    }
+  }
+
+  .info-box {
+    grid-area: info-box;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    background: var( --card-background);
+    padding: 10px 12px 8px;
+    list-style: none;
+    border-radius: 11px;
+    font-size: 0.8em;
+
+    .item {
+      line-height: 1.4;
+      padding: 5px 0;
+      color: var(--heading);
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+
+      .icon-clock {
+        height: 20px;
+        width: 20px;
+        margin-right: 8px;
+        fill: var(--background-opposite);
+        display: flex;
+      }
+
+    }
+
+    @media (max-width: 768px) {
+      position: inherit;
+      margin-left: 0;
+      width: 100%;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "article"
+      "info-box"
+      "author";
+  }
 }
