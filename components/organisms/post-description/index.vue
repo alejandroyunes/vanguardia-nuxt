@@ -16,9 +16,9 @@ const { text, text1, text2, text3 } = defineProps<PostSubtitleProps>()
   <section class="post-description">
 
       <p>{{ text }}</p>
-      <p>{{ text1 }}</p>
-      <p>{{ text2 }}</p>
-      <p>{{ text3 }}</p>
+      <p v-if="text1">{{ text1 }}</p>
+      <p v-if="text2">{{ text2 }}</p>
+      <p v-if="text3">{{ text3 }}</p>
 
   </section>
 </template>

@@ -76,7 +76,7 @@ const billboard3Data = {
 </script>
 
 <template>
-  <Billboard3 :data="billboard3Data" />
+  <Billboard3 />
 
   <Subtitle
     marginTop
