@@ -39,6 +39,7 @@ const blogListData = [
   }
 ]
 
+                 
 </script>
 
 <template>

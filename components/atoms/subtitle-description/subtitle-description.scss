@@ -9,14 +9,6 @@
     color: var(--heading);
     line-height: 2.6rem;
     padding-bottom: .5rem;
-
-    .extra-top-space {
-      padding-top: 40px;
-    
-      @media (max-width: 900px) {
-        padding-top: 0;
-      }
-    }
   }
 
   .description {

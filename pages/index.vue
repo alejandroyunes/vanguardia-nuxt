@@ -65,9 +65,12 @@ const serviceCards = [
     title="Nuestros Planes"
     description="Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />
 
-  <ServiceCards :data="serviceCards" />
+  <ServiceCards
+    :data="serviceCards" />
 
   <BrandDescription />
 
 
 </template>
+
+
