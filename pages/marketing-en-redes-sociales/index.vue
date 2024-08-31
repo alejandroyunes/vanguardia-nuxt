@@ -20,15 +20,15 @@ import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 
 useSeoMeta({
-  title: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',
-  ogTitle: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',
-  description: 'Incrementa tu visibilidad en línea y alcanza a más clientes con nuestro servicio de marketing en redes sociales.',
-  ogDescription: 'Incrementa tu visibilidad en línea y alcanza a más clientes con nuestro servicio de marketing en redes sociales.',
-  ogImage: '/.webp',
-  ogLocale: 'en_Es',
-  twitterTitle: 'Mejora tu presencia en línea con nuestro servicio de marketing en redes sociales.',
-  twitterCard: 'summary_large_image',//default
-  twitterDescription: 'Incrementa tu visibilidad en línea y alcanza a más clientes con nuestro servicio de marketing en redes sociales.',
+  title: 'Estrategias de Marketing en Redes Sociales | Impulsa tu Negocio Online',
+  ogTitle: 'Estrategias de Marketing en Redes Sociales | Impulsa tu Negocio Online',
+  description: 'Potencia tu marca con nuestro servicio de marketing en redes sociales. Aumenta engagement, ventas y ROI. ¡Consulta gratis ahora!',
+  ogDescription: 'Expertos en marketing digital. Estrategias personalizadas para Facebook, Instagram, LinkedIn y más. Mejora tu visibilidad y convierte seguidores en clientes.',
+  ogImage: '/meta/marketing-redes-sociales-expertos.webp',
+  ogLocale: 'es_CO',
+  twitterTitle: 'Domina las Redes Sociales | Servicios de Marketing Digital Profesional',
+  twitterCard: 'summary_large_image',
+  twitterDescription: 'Gestión de redes sociales, creación de contenido viral y análisis de resultados. Haz crecer tu negocio con nuestras estrategias probadas.',
 })
 
 const iconCards = [
