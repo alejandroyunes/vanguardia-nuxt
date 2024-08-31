@@ -38,6 +38,10 @@ useSeoMeta({
   twitterData1: '4 minutos',
 })
 
+const route = useRoute()
+
+const { slug } = route.params
+
 const blogData = {
   author: "Alejandro Cano",
   description: "Un diseñador independiente y desarrollador front-end dedicado a mejorar algo de la experiencia en la web, con un enfoque centrado en la mejora progresiva y el perfeccionamiento constante.",

@@ -5,13 +5,11 @@ import './marketing-agreement.scss'
 
 <template>
   <section class="marketing-agreement">
-    <div class="container">
       <p>El cliente puede elegir cualquiera de los siguientes tipos de anuncios de marketing en redes sociales:
         Anuncios de alcance, anuncios de clientes potenciales, anuncios de tráfico, anuncios de vistas de video y
         anuncios
         de páginas similares.
       </p>
-      <p class="text">* Plazo mínimo de 3 meses</p>
-    </div>
+    <p class="text">* Plazo mínimo de 3 meses</p>
   </section>
 </template>
