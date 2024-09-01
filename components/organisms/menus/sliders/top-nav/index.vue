@@ -66,11 +66,14 @@ const navLinks = [
 <template>
 
   <div
-    :class="[isTopNavOpen === undefined ? 'display-none' : 'top-nav-container',  isTopNavOpen ? 'top-slide-in' : '', isTopNavOpen === false ? 'top-slide-out' : '']">
+    :class="[isTopNavOpen === undefined ?
+     'display-none' : 'top-nav',
+     isTopNavOpen ? 'top-slide-in' : '',
+     isTopNavOpen === false ? 'top-slide-out' : '']">
     
     <div class="top-nav-header">
 
-      <NuxtLink to="/" class="logo-container">
+      <NuxtLink to="/" class="top-nav-logo">
         <Logo />
       </NuxtLink>
 
@@ -81,20 +84,18 @@ const navLinks = [
 
     <div class="top-nav-content">
 
-      <nav>
-        <ul class="list">
-
+      <nav class="top-nav-list">
+        <ul>
           <li v-for="(link, index) in navLinks" :key="index">
             <NuxtLink :to="link.link" class="item" @click="toggleTopNav()">
               <component :is="link.icon" class="icon" :alt="link.iconAlt" />
               <p>{{ link.title }}</p>
             </NuxtLink>
           </li>
-
         </ul>
       </nav>
 
-      <div class="contact">
+      <div class="top-nav-contact">
 
         <div class="social-list">
           <span class="svg">
