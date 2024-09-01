@@ -69,8 +69,6 @@ const socialLinks = [
   { icon: InstagramSvg, to: 'https://instagram.com' },
 ]
 
-console.log(isOpen)
-
 
 </script>
 
