@@ -8,13 +8,6 @@ import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
 
 const currentYear = ref(new Date().getFullYear())
 
-const links = [
-  { label: 'Diseño web', to: '/' },
-  { label: 'Desarrollo web', to: '/' },
-  { label: 'SEO', to: '/' },
-  { label: 'Marketing digital', to: '/' },
-]
-
 const socialLinks = [
   { icon: FacebookSvg, to: 'https://facebook.com' },
   { icon: TwitterSvg, to: 'https://twitter.com' },
@@ -37,12 +30,6 @@ const socialLinks = [
       </li>
     </ul>
 
-    <ul class="links">
-      <li v-for="link in links" :key="link.to">
-        <NuxtLink :to="link.to">{{ link.label }}</NuxtLink>
-      </li>
-    </ul>
-
-    <p class="copyright">&copy; {{ currentYear }} Vanguardia.tech. Todos los derechos reservados.</p>
+    <p class="copyright">&copy; {{ currentYear }} Vanguardia.tech.</p>
   </footer>
 </template>

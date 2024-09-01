@@ -5,11 +5,13 @@ import ExitSvg from '@/components/icons/ExitSvg.vue'
 import SeoSvg from "~/components/icons/menu/SeoSvg.vue"
 import MarketingSvg from "~/components/icons/menu/MarketingSvg.vue"
 import GraphicDesignSvg from "~/components/icons/menu/GraphicDesign.vue"
-import ServerSvg from "~/components/icons/menu/ServerSvg.vue"
 import SupportSvg from "~/components/icons/menu/SupportSvg.vue"
 import WebDesignSvg from "~/components/icons/menu/WebDesignSvg.vue"
 import SuggestionsSvg from "~/components/icons/menu/SuggestionsSvg.vue"
 import AnnouncementsSvg from '~/components/icons/menu/AnnouncementsSvg.vue'
+import FacebookSvg from '~/components/icons/social/FacebookSvg.vue'
+import TwitterSvg from '~/components/icons/social/TwitterSvg.vue'
+import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
 
 const { toggleTopNav, isTopNavOpen } = defineProps<{
   toggleTopNav: () => void
@@ -61,6 +63,12 @@ const navLinks = [
   }
 ]
 
+const socialLinks = [
+  { icon: FacebookSvg, to: 'https://facebook.com' },
+  { icon: TwitterSvg, to: 'https://twitter.com' },
+  { icon: InstagramSvg, to: 'https://instagram.com' },
+]
+
 </script>
 
 <template>
@@ -97,15 +105,18 @@ const navLinks = [
 
       <div class="top-nav-contact">
 
-        <div class="social-list">
-          <span class="svg">
-          </span>
-        </div>
-
         <p class="contact-tel"><a href="tel:+41787746337">+57 304 665 9898</a></p>
         <p class="contact-email">
           <a href="mailto:alejandroyunes@outlook.com">alejandroyunes@outlook.com</a>
         </p>
+
+        <ul class="social-links">
+          <li class="item" v-for="socialLink in socialLinks" :key="socialLink.to">
+            <NuxtLink :to="socialLink.to">
+            <component :is="socialLink.icon" />
+          </NuxtLink>
+          </li>
+        </ul>
       </div>
 
     </div>

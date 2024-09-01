@@ -52,31 +52,8 @@
     }
   }
 
-  .links {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    gap: 16px;
-    margin: 24px 0;
-
-    li {
-      a {
-        font-size: .9rem;
-        color: var(--heading);
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-    }
-
-    @media (max-width: 560px) {
-      gap: 16px;
-    }
-  }
-
   .copyright {
-    padding-top: 10px;
+    padding-top: 24px;
     color: var(--text);
     font-size: .9rem;
   }
