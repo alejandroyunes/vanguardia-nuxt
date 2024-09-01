@@ -23,6 +23,7 @@ const NextStyleXBabel = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702
 const NextStyleXTsConfig = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599163/blog/articles/next-app-style-x/vj5nd8ewqsfvp94n9cjy.webp"
 const NextStyleXEslint = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599324/blog/articles/next-app-style-x/jpp9emuygb4zv6xv52ah.webp"
 const NextStyleXNextConfig = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599513/blog/articles/next-app-style-x/cxy3zobcgsgxmp6iue3l.webp"
+import Loading from '~/components/atoms/loading/loading-1/index.vue'
 
 useSeoMeta({
   title: 'Blog de Vanguardia: Innovaciones en Tecnología y Marketing Digital',
@@ -39,12 +40,9 @@ useSeoMeta({
 })
 
 const route = useRoute()
-
 const { slug } = route.params
 
 const blogData = {
-  author: "Alejandro Cano",
-  description: "Un diseñador independiente y desarrollador front-end dedicado a mejorar algo de la experiencia en la web, con un enfoque centrado en la mejora progresiva y el perfeccionamiento constante.",
   blog: [
     {
       id: 1,
@@ -52,16 +50,16 @@ const blogData = {
       meta: "Una guía paso a paso para configurar la aplicación Next 14 con Style X. En el mundo siempre cambiante de la tecnología, mantenerse al día significa adoptar las últimas innovaciones.",
       image: NextStyleX,
       alt: "Next 14 app con Style X",
-      pageSummary: "Una guía paso a paso para configurar la aplicación Next 14 con Style X. En el mundo siempre cambiante de la tecnología, mantenerse al día significa adoptar las últimas innovaciones.",
       articleSummary: "Una de esas innovaciones es Next 14, un framework poderoso que promete transformar tu aplicación web. Instalaremos también Style X para nuestros estilos. En esta guía, te guiaremos a través del proceso de instalación de la Next App y Style X.",
-      time: "10",
-      related: ["React"],
-      shared: ["Twitter", "LinkedIn"],
-      date: "14 de diciembre de 2023",
-      step: [
+      readTime: "10",
+      tags: ["React"],
+      sharedOn: ["Twitter", "LinkedIn"],
+      publishDate: "14 de diciembre de 2023",
+      steps: [
         {
           title: "Configuración del entorno: Configuración inicial",
-          description: "Primeros pasos: Asegúrate de tener Node y un administrador de paquetes como npm, pnpm o yarn instalados en tu sistema. Una vez confirmado, ejecuta el comando 'npm init -y' en el directorio elegido desde la terminal. Esto establecerá una configuración básica del proyecto. En el siguiente paso, nos centraremos en instalar las dependencias necesarias para nuestra aplicación.",
+          step: "Primeros pasos:",
+          description: " Asegúrate de tener Node y un administrador de paquetes como npm, pnpm o yarn instalados en tu sistema. Una vez confirmado, ejecuta el comando 'npm init -y' en el directorio elegido desde la terminal. Esto establecerá una configuración básica del proyecto. En el siguiente paso, nos centraremos en instalar las dependencias necesarias para nuestra aplicación.",
           resource: "https://nodejs.org/en",
         },
         {
@@ -77,24 +75,18 @@ const blogData = {
           ],
           img: NextStyleXDependencies,
           imgAlt: "Next 14 app con Style X",
-          imgHeight: "895",
-          imgWidth: "570"
         },
         {
           title: "Configuración de Babel",
           description: "Babel es un compilador de JavaScript popular que permite a los desarrolladores escribir código en la última versión de ECMAScript (el nombre oficial de la especificación del lenguaje JavaScript) y luego transformarlo o transpilarlo a una versión anterior de JavaScript compatible con la mayoría de los navegadores y entornos:",
           img: NextStyleXBabel,
           imgAlt: "Configuración de Babel para la próxima aplicación y Style X",
-          imgHeight: "621",
-          imgWidth: "483"
         },
         {
           title: "Agregar tsconfig.json",
           description: "Esta configuración define opciones del compilador para un proyecto TypeScript, incluyendo detalles como la versión de destino, el soporte para decoradores experimentales, el sistema de módulos y otras configuraciones relacionadas con la comprobación estricta de tipos. También establece las rutas de inclusión de archivos y directorios para el compilador TypeScript. Me gusta establecer el src/app porque estará bajo la carpeta de node_modules.",
           img: NextStyleXTsConfig,
           imgAlt: "Configuración de tsconfig",
-          imgHeight: "1032",
-          imgWidth: "688"
         },
         {
           title: "Agregar eslintrc.js",
@@ -109,8 +101,6 @@ const blogData = {
           description: "next.config.js es un archivo de configuración utilizado en Next.js. Este archivo nos permite personalizar varios aspectos del proceso de construcción y del comportamiento en tiempo de ejecución de Next.js.",
           img: NextStyleXNextConfig,
           imgAlt: "Configuración de next config",
-          imgHeight: "265",
-          imgWidth: "597"
         },
         {
           title: "Crear page.tsx y el diseño",
@@ -127,13 +117,12 @@ const blogData = {
       meta: "Este servidor está construido utilizando Node.js y Express.  Utilizando GraphQL con Apollo Server como el servidor GraphQL. Los datos se almacenan en una base de datos PostgreSQL y se acceden a través de Prisma.",
       image: NodeExpressServer,
       alt: "Diagrama de Arquitectura del Servidor con Node.js, Express, TypeScript, GraphQL, Apollo Server, PostgreSQL y Prisma",
-      pageSummary: "Guía para crear un Servidor con Node.js, Express, TypeScript, GraphQL, Apollo Server, PostgreSQL y Prisma.",
       articleSummary: "Este servidor será construido utilizando Node.js y Express para manejar las solicitudes HTTP. Utiliza TypeScript para agregar tipado estático a todo el código. La API se implementa utilizando GraphQL con Apollo Server como el servidor GraphQL. Los datos se almacenan en una base de datos PostgreSQL y se acceden a través de Prisma, un ORM (Object-Relational Mapping) para Node.js.",
-      time: "15",
-      related: ["Node"],
-      shared: ["Twitter", "LinkedIn"],
-      date: "Noviembre 02, 2023",
-      step: [
+      readTime: "15",
+      tags: ["Node"],
+      sharedOn: ["Twitter", "LinkedIn"],
+      publishDate: "Noviembre 02, 2023",
+      steps: [
         {
           title: "Preparando el Entorno: Instalación de Node y Configuración Inicial",
           description: "Para comenzar, es esencial asegurarse de tener Node y un gestor de paquetes como npm, pnpm o yarn instalados en tu sistema. Una vez confirmada su instalación, puedes ejecutar el comando 'npm init -y' en la carpeta de tu elección desde la terminal. Esto establecerá una configuración básica para tu proyecto. En el siguiente paso, nos enfocaremos en la instalación de las dependencias necesarias para nuestro servidor.",
@@ -243,13 +232,12 @@ const blogData = {
       meta: "Descubre habilidades esenciales y perspectivas para una exitosa carrera en desarrollo web en nuestra guía integral.",
       image: webDev,
       alt: "Computadora con alusión al desarrollo web",
-      pageSummary: "Descubre habilidades esenciales y perspectivas para una exitosa carrera en desarrollo web en nuestra guía integral.",
       articleSummary: "Te presentamos nuestra Guía de Carrera en Desarrollo Web: un recurso completo diseñado para personas interesadas en embarcarse en una carrera en desarrollo web. Adéntrate en las perspectivas de la industria y descubre las habilidades y herramientas esenciales necesarias para destacar en este campo dinámico.",
-      time: "10",
-      related: ["JavaScript", "Node"],
-      shared: ["Twitter", "LinkedIn"],
-      date: "Octubre 9, 2023",
-      step: [
+      readTime: "10",
+      tags: ["JavaScript", "Node"],
+      sharedOn: ["Twitter", "LinkedIn"],
+      publishDate: "Octubre 9, 2023",
+      steps: [
         {
           title: "Diseñador UI/UX",
           description: "Un Diseñador UI/UX crea interfaces digitales amigables para el usuario, enfocándose en mejorar la usabilidad, estética y satisfacción general del usuario en sitios web y aplicaciones. Combina la creatividad con la funcionalidad para crear experiencias agradables e intuitivas. Aquí tienes algunos puntos clave:",
@@ -414,13 +402,12 @@ const blogData = {
       meta: "Descubre el potencial de las etiquetas HTML5 para transformar tu web en una experiencia moderna e interactiva",
       image: HTML5Img,
       alt: "Logo HTML 5 para la web moderna",
-      pageSummary: "Descubre las Innovadoras Etiquetas HTML que Simplifican Nuestra Vida en la Web.",
       articleSummary: "Me sorprende cuántas etiquetas desconocía; algunas de ellas ya las había explorado de manera superficial, mientras que otras apenas las había utilizado. A continuación, echaremos un vistazo a algunas de ellas.",
-      time: "4",
-      related: ["HTML"],
-      shared: ["Twitter", "LinkedIn"],
-      date: "Octubre 9, 2023",
-      step: [
+      readTime: "4",
+      tags: ["HTML"],
+      sharedOn: ["Twitter", "LinkedIn"],
+      publishDate: "Octubre 9, 2023",
+      steps: [
         {
           title: "Comenzaremos nuestra lista con el elemento 'Dataset'",
           description: "Para crear una entrada de datos y una lista, utilizamos tanto la etiqueta 'input' como 'datalist'. La propiedad 'list' del elemento 'input' hace referencia al 'datalist', lo que nos permite tener una entrada donde podemos ingresar datos.",
@@ -471,13 +458,12 @@ const blogData = {
       meta: "Aprende cómo instalar Linux Mint junto a Windows 11.",
       image: linuxWindowsArticle,
       alt: "Pinguino de Linux y fondo de Windows",
-      pageSummary: "Esta guía te mostrará cómo correr Linux Mint y Windows juntos en un mismo PC.",
       articleSummary: "Esta guía te mostrará cómo correr Linux Mint y Windows juntos en un mismo PC. Los pasos mencionados sirven para las distribuciones de Linux Mint. Bueno, veamos cómo arrancar Linux de forma dual en un sistema Windows.",
-      time: "5",
-      related: ["Windows", "Linux"],
-      shared: ["Twitter", "LinkedIn"],
-      date: "Octubre 3, 2023",
-      step: [
+      readTime: "5",
+      tags: ["Windows", "Linux"],
+      sharedOn: ["Twitter", "LinkedIn"],
+      publishDate: "Octubre 3, 2023",
+      steps: [
         {
           title: "Haz una copia de seguridad [opcional]",
           description: "Siempre es bueno tener una copia de seguridad, por si acaso pasa algo. Descarga la imagen ISO según tu sistema operativo de Windows.",
@@ -510,8 +496,15 @@ const blogData = {
   ]
 }
 
+const postId = Number(slug[1])
+const blog = blogData.blog.find(blog => blog.id === postId)
+
+onMounted(() => {
+  console.log(blog)
+})
+
 </script>
 
 <template>
-  <BlogArticle :data="blogData" />
+  <BlogArticle :data="blog" />
 </template>

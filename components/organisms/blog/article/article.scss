@@ -12,17 +12,16 @@
     position: sticky;
     top: 100px;
     height: fit-content;
+
     .heading {
       display: flex;
       align-items: center;
       gap: 8px;
-      padding-bottom: 32px;
 
       .image {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: 16px;
+        display: flex;
+        width: 60px;
+        height: auto;
       }
 
       .author-name {
@@ -32,6 +31,7 @@
     }
 
     .description {
+      padding-top: 16px;
       font-size: .93rem;
     }
 
@@ -43,7 +43,7 @@
   .article {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
     grid-area: article;
     border-bottom: none;
 
@@ -71,8 +71,21 @@
     }
 
     .content {
+      display: flex;
+      flex-direction: column;
       grid-area: content;
-      padding: 16px 0 0 16px;
+    
+      .image {
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          max-width: 500px;
+        }
+      }
 
       .summary::before {
         content: "Breve Resumen ↬ ";
@@ -92,13 +105,8 @@
         border-bottom: 1px solid var(--border);
       }
 
-      .image {
-        margin: 24px 0;
-        display: flex;
-        justify-content: center;
-      }
-
       .step {
+        padding-top: 16px;
 
         .title {
           font-size: 24px;
@@ -107,26 +115,27 @@
         }
 
         .description {
-          outline: 1px solid red;
+          color: var(--text);
+          padding-bottom: 16px;
           strong {
             font-weight: 600;
-            color: red;
+            color: var(--primary);
           }
         }
 
         .list {
           padding-bottom: 10px;
-  
+          padding: 0;
+          margin: 0 0 16px 16px;
           li::before {
             content: "↬";
             display: inline;
             font-style: normal;
             letter-spacing: 2px;
             font-size: 1em;
-            padding-left: 16px;
             margin: 0;
             font-weight: 600;
-            color: var(--red);
+            color: var(--danger);
           }
   
           li {
@@ -144,25 +153,27 @@
           font-family: monospace;
           font-size: 1em;
           line-height: 1.6;
-          margin: 1em 0;
           width: 100%;
-          padding: 10px 8px;
           display: block;
           border-radius: 16px;
           overflow: auto;
           overflow-wrap: normal;
-          padding: 1em;
           white-space: pre-line;
           word-wrap: normal;
-          color: red;
+          color: var(--info);
         }
   
         .image {
-          max-height: 300px;
-          height: 100%;
+            object-fit: cover;
+            max-width: 500px;
+
+            @media (max-width: 640px) {
+              width: 100%;
+            }
         }
   
-        .link {
+        .external-link {
+          padding-top: 8px;
           a {
             color: var(--primary);
           }
@@ -181,6 +192,7 @@
     list-style: none;
     border-radius: 11px;
     font-size: 0.8em;
+    min-width: 140px;
 
     .item {
       line-height: 1.4;
@@ -210,7 +222,9 @@
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 90px 20px 0;
+    padding: 90px 0 0;
+    margin: 0 20px;
+    gap: 20px;
     grid-template-areas:
       "article"
       "info-box"

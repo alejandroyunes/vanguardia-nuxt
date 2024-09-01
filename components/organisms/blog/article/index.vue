@@ -23,19 +23,16 @@ type BlogArticleType = {
   meta: string
   image: string
   alt: string
-  blogPageSummary: string
   articleSummary: string
-  time: string
-  related: string[]
-  shared: string[]
-  date: string
-  step: StepType[]
+  readTime: string
+  tags: string[]
+  sharedOn: string[]
+  publishDate: string
+  steps: StepType[]
 }
 
 type BlogDataTypes = {
   data: {
-    author: string
-    description: string
     blog: BlogArticleType[]
   }
 }
@@ -55,16 +52,15 @@ const { data } = defineProps<BlogDataTypes>()
           class="image"
           src="/images/blog/blog-author.png"
           alt="Vanguardi Author"
-          sizes="100vw xs:360px sm:500px"
           format="webp"
         />
 
-        <p class="author-name">{{ data.author }}</p>
+        <p class="author-name">Alejandro Cano</p>
 
       </div>
 
       <p class="description">
-        {{ data.description }}
+        Un diseñador independiente y desarrollador front-end dedicado a mejorar algo de la experiencia en la web, con un enfoque centrado en la mejora progresiva y el perfeccionamiento constante.
       </p>
 
     </div>
@@ -72,49 +68,50 @@ const { data } = defineProps<BlogDataTypes>()
     <div class="article">
 
       <div class="heading">
-        <p class="date">{{ data.blog[0].date }}</p>
-        <h1 class="title">{{ data.blog[0].title }}</h1>
+        <p class="date">{{ data.publishDate }}</p>
+        <h1 class="title">{{ data.title }}</h1>
       </div>
 
       <div class="content">
 
-        <p class="summary">
-          {{ data.blog[0].articleSummary }}
-        </p>
+        <div class="image">
+          <NuxtImg
+          :src="data.image"
+          :alt="data.alt"
+          densities="x1"
+        />
+        </div>
+        
+        <div class="step" v-for="step in data.steps" :key="step.id">
 
-          <NuxtPicture
-            class="image"
-            :src="data.blog[0].image"
-            :alt="data.blog[0].alt"
-            sizes="100vw xs:400px sm:500px"
-            format="webp"
-          />
-
-        <div class="step">
-
-          <h2 class="title">{{ data.blog[0].step[0].title }}</h2>
-
-          <p class="description">
-            <strong>{{ data.blog[0].step[0].step }}</strong>
-            {{ data.blog[0].step[0].description }}
+          <h2 class="title">{{ step.title }}</h2>
+          
+          <p v-if="step.description" class="description">
+            <strong>{{ step.step }}</strong>
+            {{ step.description }}
           </p>
 
-          <ul class="list">
-            <li> {{ data.blog[0].step[0].list }} </li>
+          <ul v-if="step.list" class="list">
+            <li v-for="item in step.list" :key="item"> {{ item }} </li>
           </ul>
 
-          <pre class="code">
+          <pre v-if="step.code" class="code">
             <code>
-                {{ data.blog[0].step[0].code }}
+                {{ step.code }}
             </code>
           </pre>
 
-          <NuxtPicture class="image" :src="data.blog[0].step[0].img" :alt="data.blog[0].step[0].imgAlt"
-            sizes="100vw xs:360px sm:500px" format="webp" />
+          <NuxtImg
+            v-if="step.img"
+            class="image"
+            :src="step.img"
+            :alt="step.imgAlt"
+            densities="x1"
+          />
 
-          <span class="link" aria-label="link">⬇️📦
-            <a href="{{data.blog[0].step[0].resource}}">{{ data.blog[0].step[0].resource }}</a>
-          </span>
+          <div v-if="step.resource" class="external-link" aria-label="link">⬇️📦
+             <a :href="step.resource">{{ step.resource }}</a>
+          </div>
 
         </div>
 
@@ -125,13 +122,13 @@ const { data } = defineProps<BlogDataTypes>()
     <ul class="info-box">
       <li class="item">
         <ClockSvg class="icon-clock" />
-        {{ data.blog[0].time }} mins
+        {{ data.readTime }} mins
       </li>
       <li class="item">
-        <Tools :tools="data.blog[0].related" />
+        <Tools :tools="data.related" />
       </li>
       <li class="item">
-        <Share :data="data.blog[0].shared" />
+        <Share :data="data.sharedOn" />
       </li>
     </ul>
 
