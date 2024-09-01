@@ -49,16 +49,16 @@ const servicesLinks = [
 
 const supportLinks = [
   {
-    title: 'Contacta con soporte',
-    link: '/contacta-con-soporte',
-    icon: SupportSvg,
-    iconAlt: 'Contacta con soporte'
-  },
-  {
     title: 'Blog',
     link: '/blog',
     icon: AnnouncementsSvg,
     iconAlt: 'Blog'
+  },  
+  {
+    title: 'Contacta con soporte',
+    link: '/contacta-con-soporte',
+    icon: SupportSvg,
+    iconAlt: 'Contacta con soporte'
   },
   {
     title: 'Sugerencias',

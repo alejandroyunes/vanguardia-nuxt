@@ -68,7 +68,7 @@ const submitHandler = async (createForm: Props) => {
             </div>
 
             <button :class="['btn-submit', { 'btn-disabled': !state.valid }]" type="submit">
-              <span>Solicitar Soporte</span>
+              <span>Enviar Sugerencia</span>
             </button>
           </FormKit>
 

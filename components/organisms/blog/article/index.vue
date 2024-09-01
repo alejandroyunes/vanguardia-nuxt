@@ -74,6 +74,10 @@ const { data } = defineProps<BlogDataTypes>()
 
       <div class="content">
 
+        <div class="summary">
+          <p>{{ data.articleSummary }}</p>
+        </div>
+
         <div class="image">
           <NuxtImg
           :src="data.image"
@@ -125,7 +129,7 @@ const { data } = defineProps<BlogDataTypes>()
         {{ data.readTime }} mins
       </li>
       <li class="item">
-        <Tools :tools="data.related" />
+        <Tools :tools="data.tags" />
       </li>
       <li class="item">
         <Share :data="data.sharedOn" />

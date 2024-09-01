@@ -49,7 +49,6 @@
 
     .heading {
       grid-area: title;
-      padding: 16px 0 0 16px;
 
       .date {
         font-style: italic;
@@ -65,7 +64,7 @@
 
         @media (max-width: 768px) {
           font-size: 1.5rem;
-          line-height: 1.5rem;
+          line-height: 2rem;
         }
       }
     }
@@ -91,17 +90,20 @@
         content: "Breve Resumen ↬ ";
         display: inline;
         font-style: normal;
+        padding-right: 8px;
         letter-spacing: 2px;
         font-size: 0.75em;
         margin: 0;
         font-weight: 600;
         text-transform: uppercase;
         color: var(--danger);
+        padding-bottom: 16px;
       }
 
       .summary {
         font-style: italic;
         padding-bottom: 4px;
+        margin-bottom: 16px;
         border-bottom: 1px solid var(--border);
       }
 
@@ -131,6 +133,7 @@
             content: "↬";
             display: inline;
             font-style: normal;
+            padding-right: 8px;
             letter-spacing: 2px;
             font-size: 1em;
             margin: 0;
@@ -140,6 +143,7 @@
   
           li {
             list-style-type: none;
+            padding: 8px 0;
           }
   
           @media (max-width: 768px) {
@@ -167,8 +171,16 @@
             object-fit: cover;
             max-width: 500px;
 
-            @media (max-width: 640px) {
-              width: 100%;
+            @media (max-width: 1024px) {
+              max-width: 400px;
+            }
+
+            @media (max-width: 862px) {
+              max-width: 300px;
+            }
+
+            @media (max-width: 768px) {
+              max-width: 100%;
             }
         }
   
@@ -220,7 +232,7 @@
 
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr;
     padding: 90px 0 0;
     margin: 0 20px;

@@ -1,20 +1,20 @@
 <script setup lang="ts">
-import Html from "~/components/icons/tools/HtmlSvg.vue"
-import Javascript from "~/components/icons/tools/JavaScriptSvg.vue"
+import HTML from "~/components/icons/tools/HtmlSvg.vue"
+import JavaScript from "~/components/icons/tools/JavaScriptSvg.vue"
 import Linux from "~/components/icons/tools/LinuxSvg.vue"
-import NodeJS from "~/components/icons/tools/NodeSvg.vue"
+import Node from "~/components/icons/tools/NodeSvg.vue"
 import Systems from "~/components/icons/tools/SystemsSvg.vue"
 import Windows from "~/components/icons/tools/WindowsSvg.vue"
 import React from "~/components/icons/tools/ReactSvg.vue"
 
 const toolComponents: Record<string, Component> = {
-  Html,
-  Javascript,
+  HTML,
+  JavaScript,
   Linux,
-  NodeJS,
+  Node,
   Systems,
   Windows,
-  React
+  React,
 }
 
 import './tools.scss'

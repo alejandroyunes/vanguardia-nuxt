@@ -23,7 +23,6 @@ const NextStyleXBabel = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702
 const NextStyleXTsConfig = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599163/blog/articles/next-app-style-x/vj5nd8ewqsfvp94n9cjy.webp"
 const NextStyleXEslint = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599324/blog/articles/next-app-style-x/jpp9emuygb4zv6xv52ah.webp"
 const NextStyleXNextConfig = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599513/blog/articles/next-app-style-x/cxy3zobcgsgxmp6iue3l.webp"
-import Loading from '~/components/atoms/loading/loading-1/index.vue'
 
 useSeoMeta({
   title: 'Blog de Vanguardia: Innovaciones en Tecnología y Marketing Digital',
@@ -119,13 +118,14 @@ const blogData = {
       alt: "Diagrama de Arquitectura del Servidor con Node.js, Express, TypeScript, GraphQL, Apollo Server, PostgreSQL y Prisma",
       articleSummary: "Este servidor será construido utilizando Node.js y Express para manejar las solicitudes HTTP. Utiliza TypeScript para agregar tipado estático a todo el código. La API se implementa utilizando GraphQL con Apollo Server como el servidor GraphQL. Los datos se almacenan en una base de datos PostgreSQL y se acceden a través de Prisma, un ORM (Object-Relational Mapping) para Node.js.",
       readTime: "15",
-      tags: ["Node"],
+      tags: ["Node", 'JavaScript'],
       sharedOn: ["Twitter", "LinkedIn"],
       publishDate: "Noviembre 02, 2023",
       steps: [
         {
           title: "Preparando el Entorno: Instalación de Node y Configuración Inicial",
-          description: "Para comenzar, es esencial asegurarse de tener Node y un gestor de paquetes como npm, pnpm o yarn instalados en tu sistema. Una vez confirmada su instalación, puedes ejecutar el comando 'npm init -y' en la carpeta de tu elección desde la terminal. Esto establecerá una configuración básica para tu proyecto. En el siguiente paso, nos enfocaremos en la instalación de las dependencias necesarias para nuestro servidor.",
+          description: " es esencial asegurarse de tener Node y un gestor de paquetes como npm, pnpm o yarn instalados en tu sistema. Una vez confirmada su instalación, puedes ejecutar el comando 'npm init -y' en la carpeta de tu elección desde la terminal. Esto establecerá una configuración básica para tu proyecto. En el siguiente paso, nos enfocaremos en la instalación de las dependencias necesarias para nuestro servidor.",
+          step: "Para comenzar,",
           resource: "https://nodejs.org/",
         },
         {
@@ -139,32 +139,24 @@ const blogData = {
           ],
           img: NodeExpressServerPackage,
           imgAlt: "Paquetes de Node.js para el servidor",
-          imgHeight: "553",
-          imgWidth: "311"
         },
         {
           title: "Configuración de Nodemon",
           description: "Nodemon es una herramienta que nos permite reiniciar automáticamente el servidor cuando se detectan cambios en el código. Para configurarlo, creamos un archivo nodemon.json en la raíz del proyecto y agregamos el siguiente código:",
           img: NodeExpressServerNodemon,
           imgAlt: "Configuración de Nodemon para el servidor",
-          imgHeight: "112",
-          imgWidth: "283"
         },
         {
           title: "Agregar tsconfig.json",
           description: "Esta configuración define las opciones del compilador para un proyecto TypeScript, incluyendo detalles como la versión de destino, el soporte para decoradores experimentales, el sistema de módulos, y otras configuraciones relacionadas con la estricta comprobación de tipos. Además, establece las rutas de inclusión de archivos y directorios para el compilador TypeScript.",
           img: NodeExpressServerTsConfig,
           imgAlt: "Configuración de tsconfig",
-          imgHeight: "382",
-          imgWidth: "400"
         },
         {
           title: "Servidor web utilizando Express.js con GraphQL",
           description: "Este código configura un servidor web Express habilitado para GraphQL en la ruta '/graphql' y proporciona una ruta raíz que responde con un mensaje ' hello world' para rutas HTTP. Al ejecutarse, el servidor se inicia en el puerto 4000 y queda listo para atender solicitudes.",
           img: NodeExpressServerIndex,
           imgAlt: "Configuración de Index en expressjs",
-          imgHeight: "565",
-          imgWidth: "507",
           list: [
             "El código importa bibliotecas como Express, CORS, dotenv y Apollo Server.",
             "Configura un servidor Express en un puerto (4000 o definido por variable de entorno).",
@@ -178,48 +170,36 @@ const blogData = {
           description: "Este código importa módulos, como el sistema de archivos 'fs' y 'path' de Node, y resuelve tipos GraphQL definidos en archivos. Luego, combina estos tipos en una sola definición 'typeDefs' y configura los resolvers para consultas y mutaciones relacionadas con usuarios y publicaciones.",
           img: NodeExpressServerGraphQL,
           imgAlt: "Configuración de GraphQL",
-          imgHeight: "273",
-          imgWidth: "700"
         },
         {
           title: "Agregar resolvers para consultas y mutaciones",
           description: "Este código define resolvers para consultas y mutaciones relacionadas con usuarios y publicaciones. Los resolvers son funciones que se ejecutan cuando se realiza una consulta o mutación GraphQL. Cada resolver recibe argumentos, realiza una operación y devuelve un resultado.",
           img: NodeExpressServerGraphQLResolver,
           imgAlt: "Configuración de GraphQL resolvers",
-          imgHeight: "273",
-          imgWidth: "700"
         },
         {
           title: "Funciones de resolución y gestión de usuarios en GraphQL con Prisma",
           description: "Este código importa módulos relacionados con Prisma y GraphQL, y define funciones para interactuar con la base de datos y realizar operaciones relacionadas con usuarios. Estas operaciones incluyen obtener usuarios, obtener un usuario por ID y crear un nuevo usuario en la base de datos a través de Prisma. El código también incluye la extracción de selecciones GraphQL para determinar si se deben incluir detalles adicionales, como publicaciones, al obtener usuarios o un usuario específico.",
           img: NodeExpressServerGraphQLServices,
           imgAlt: "Configuración de servicios para GraphQL",
-          imgHeight: "827",
-          imgWidth: "620"
         },
         {
           title: "Gestión de selecciones de campos en consultas GraphQL",
           description: "Este código ofrece funciones para gestionar selecciones de campos en consultas GraphQL. Aprovecha la información de resolución GraphQL para extraer y procesar las selecciones de campos, lo que resulta valioso para determinar qué datos deben recuperarse de la base de datos en función de la consulta GraphQL. Además, en caso de que el campo no exista, proporciona un resultado vacío, mejorando el desempeño del sistema.",
           img: NodeExpressServerGraphQLExtract,
           imgAlt: "Gestión de selecciones de campos en consultas GraphQL",
-          imgHeight: "286",
-          imgWidth: "482"
         },
         {
           title: "Adicionalmente, agregamos los typesDefs para usuario y publicación",
           description: "Esto describe los types y mutations de GraphQL con tres tipos principales: 'User,' 'UserInput,' 'Query,' y 'Mutation.' El tipo 'User tiene campos como 'id,' 'email,' 'username,' y 'posts,' y se utiliza para representar usuarios y sus relaciones con publicaciones. 'UserInput' se utiliza para ingresar información de usuario en mutaciones. 'Query' proporciona operaciones para recuperar usuarios o un usuario específico. 'Mutation' ofrece operaciones para crear, actualizar y eliminar usuarios en la base de datos a través de GraphQL.",
           img: NodeExpressServerGraphQLTypeDefs,
           imgAlt: "Types y mutaciones de GraphQL",
-          imgHeight: "294",
-          imgWidth: "500"
         },
         {
           title: "Esquema Prisma para Usuarios y Publicaciones en PostgreSQL",
           description: "Este fragmento de código define un esquema Prisma que representa modelos de datos para usuarios y publicaciones en una base de datos PostgreSQL. También configura la generación del cliente de Prisma para interactuar con la base de datos.  Agregamos nuestra base de datos en el archivo .env, y luego ejecutamos el comando 'npx prisma generate' para generar el cliente de Prisma.",
           img: NodeExpressServerPrisma,
           imgAlt: "Schema de Prisma para usuarios y publicaciones",
-          imgHeight: "294",
-          imgWidth: "500"
         },
         {
           description: "Si has llegado hasta aquí, te agradezco por tu atención. Espero que esta plantilla te pueda resultar útil."
@@ -398,8 +378,8 @@ const blogData = {
     },
     {
       id: 4,
-      title: "Explorando algunas Etiquetas HTML5 Poderosas para una Web Moderna",
-      meta: "Descubre el potencial de las etiquetas HTML5 para transformar tu web en una experiencia moderna e interactiva",
+      title: "Explorando algunas Etiquetas HTML 5 Poderosas para una Web Moderna",
+      meta: "Descubre el potencial de las etiquetas HTML 5 para transformar tu web en una experiencia moderna e interactiva",
       image: HTML5Img,
       alt: "Logo HTML 5 para la web moderna",
       articleSummary: "Me sorprende cuántas etiquetas desconocía; algunas de ellas ya las había explorado de manera superficial, mientras que otras apenas las había utilizado. A continuación, echaremos un vistazo a algunas de ellas.",
@@ -414,24 +394,18 @@ const blogData = {
           code: "<label for='languages'>language:</label>\n<input list='languages' id='language-choice' name='language-choice'>\n\n<datalist id='languages'>\n    <option value='Javascript'>\n    <option value='Java'>\n    <option value='Swift'>\n    <option value='Go'>\n    <option value='PHP'>\n</datalist>",
           img: datasetImg,
           imgAlt: "Ejemplo de elemento dataset de html",
-          imgWidth: "640",
-          imgHeight: "230"
         },
         {
           title: "Inputs para capturar imagen, videos y audio",
           description: "Este código HTML representa un formulario que permite a los usuarios cargar imágenes o videos en un servidor web.  El atributo capture nos permite acceder a la cámara de los dispositivos móviles.",
           img: typeFile,
           imgAlt: "código HTML para enviar fotos y videos al servidor nativo",
-          imgWidth: "566",
-          imgHeight: "310"
         },
         {
           title: "La etiqueta <dialog> en HTML para Cuadros de Diálogo Modales",
           description: "La etiqueta <dialog> en HTML se utiliza para crear un cuadro de diálogo modal en una página web. Un cuadro de diálogo modal es una ventana emergente que bloquea la interacción con el resto de la página hasta que el usuario interactúa con él o lo cierra.",
           img: dialogHtmlImg,
           imgAlt: "Código de ejemplo para un dialog en html",
-          imgWidth: "646",
-          imgHeight: "503"
         },
         {
           title: "Uso de las Etiquetas <details> y <summary> en HTML para Contenido Colapsable",
@@ -499,9 +473,7 @@ const blogData = {
 const postId = Number(slug[1])
 const blog = blogData.blog.find(blog => blog.id === postId)
 
-onMounted(() => {
-  console.log(blog)
-})
+console.log(blog)
 
 </script>
 
