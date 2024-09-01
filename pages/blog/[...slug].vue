@@ -473,8 +473,6 @@ const blogData = {
 const postId = Number(slug[1])
 const blog = blogData.blog.find(blog => blog.id === postId)
 
-console.log(blog)
-
 </script>
 
 <template>

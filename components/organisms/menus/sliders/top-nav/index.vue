@@ -69,15 +69,18 @@ const socialLinks = [
   { icon: InstagramSvg, to: 'https://instagram.com' },
 ]
 
+console.log(isOpen)
+
+
 </script>
+
 
 <template>
 
   <div
     :class="[isOpen === undefined ?
      'display-none' : 'top-nav',
-     isOpen ? 'top-slide-in' : '',
-     isOpen === false ? 'top-slide-out' : '']">
+     isOpen ? 'top-slide-in' : 'top-slide-out']">
     
     <div class="top-nav-header">
 
