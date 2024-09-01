@@ -7,6 +7,7 @@
   will-change: transform;
   background-color: var(--background);
 
+
   .top-nav-header {
     display: flex;
     padding: 0 18px;
@@ -50,39 +51,41 @@
     .top-nav-list {
       font-size: 16px;
       background-color: var(--background);
-
+      padding: 4px 0 8px;
       ul {
         list-style-type: none;
         padding: 0;
       }
 
-      .item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 6px;
-        color: var(--heading);
-        cursor: pointer;
-        padding: 10px 20px 10px 40px;
-        font-size: 18px;
-        
-        @media (max-width: 768px) {
-          padding-left: 20px;
-        }
-
-        &:hover {
-          background-color: var(--background-base);
-        }
-
-        svg {
-          margin:0 1rem 0 1.5rem;
+      li {
+        .item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 6px;
+          color: var(--heading);
+          cursor: pointer;
+          padding: 10px 20px 10px 40px;
+          font-size: 18px;
 
           @media (max-width: 768px) {
-            margin:0 1rem 0 .5rem;
+            padding: 10px 10px 6px 20px;
           }
-        }
-        
-        .comment-icon {
-          height: 26px;
+  
+          &:hover {
+            background-color: var(--background-base);
+          }
+  
+          svg {
+            margin:0 1rem 0 1.5rem;
+  
+            @media (max-width: 768px) {
+              margin:0 1rem 0 .5rem;
+            }
+          }
+          
+          .comment-icon {
+            height: 26px;
+          }
         }
       }
     }
@@ -91,7 +94,6 @@
       border-top: 1px solid var(--background-opposite-base);
       background-color: var(--background);  
       padding-bottom: 32px;
-      padding-left: 24px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -107,6 +109,7 @@
       }
 
       .contact-email {
+        padding-top: 8px;
         a {
           font-size: 18px;
           color: var(--heading);

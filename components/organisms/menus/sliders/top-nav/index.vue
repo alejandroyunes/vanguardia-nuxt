@@ -13,9 +13,9 @@ import FacebookSvg from '~/components/icons/social/FacebookSvg.vue'
 import TwitterSvg from '~/components/icons/social/TwitterSvg.vue'
 import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
 
-const { toggleTopNav, isTopNavOpen } = defineProps<{
-  toggleTopNav: () => void
-  isTopNavOpen: boolean | undefined
+const { toggle, isOpen } = defineProps<{
+  toggle: () => void
+  isOpen: boolean | undefined
 }>()
 
 const navLinks = [
@@ -74,10 +74,10 @@ const socialLinks = [
 <template>
 
   <div
-    :class="[isTopNavOpen === undefined ?
+    :class="[isOpen === undefined ?
      'display-none' : 'top-nav',
-     isTopNavOpen ? 'top-slide-in' : '',
-     isTopNavOpen === false ? 'top-slide-out' : '']">
+     isOpen ? 'top-slide-in' : '',
+     isOpen === false ? 'top-slide-out' : '']">
     
     <div class="top-nav-header">
 
@@ -85,7 +85,7 @@ const socialLinks = [
         <Logo />
       </NuxtLink>
 
-      <div @click="toggleTopNav" class="animation-exit">
+      <div @click="toggle" class="animation-exit">
         <ExitSvg class=" exit-icon" />
       </div>
     </div>
@@ -95,7 +95,7 @@ const socialLinks = [
       <nav class="top-nav-list">
         <ul>
           <li v-for="(link, index) in navLinks" :key="index">
-            <NuxtLink :to="link.link" class="item" @click="toggleTopNav()">
+            <NuxtLink :to="link.link" class="item" @click="toggle()">
               <component :is="link.icon" class="icon" :alt="link.iconAlt" />
               <p>{{ link.title }}</p>
             </NuxtLink>
@@ -123,5 +123,5 @@ const socialLinks = [
 
   </div>
 
-  <div v-if="isTopNavOpen" @click="toggleTopNav" class="content-bg" />
+  <div v-if="isOpen" @click="toggle" class="content-bg" />
 </template>

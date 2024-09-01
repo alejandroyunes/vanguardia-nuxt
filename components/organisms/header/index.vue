@@ -57,7 +57,7 @@ const toggleSliderTopNav = () => {
           <HamburgerVerticalSvg class="icon" />
         </div>
 
-        <SliderTopNav :toggleTopNav="toggleSliderTopNav" :isTopNavOpen="isSliderTopNavOpen" />
+        <SliderTopNav :toggle="toggleSliderTopNav" :isOpen="isSliderTopNavOpen" />
       </div>
     </div>
     
