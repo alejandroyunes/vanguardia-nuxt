@@ -61,8 +61,12 @@
         font-weight: bold;
         color: var(--heading);
         line-height: 3rem;
+      }
 
-        @media (max-width: 768px) {
+      @media (max-width: 1024px) {
+        padding-top: 16px;
+
+        .title {
           font-size: 1.5rem;
           line-height: 2rem;
         }
