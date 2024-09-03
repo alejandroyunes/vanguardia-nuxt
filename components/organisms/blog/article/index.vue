@@ -48,12 +48,14 @@ const { data } = defineProps<BlogDataTypes>()
 
       <div class="heading">
 
-        <NuxtPicture
-          class="image"
-          src="/images/blog/blog-author.png"
-          alt="Vanguardi Author"
-          format="webp"
-        />
+        <div class="image">
+          <NuxtPicture
+            src="/images/blog/blog-author.png"
+            alt="Vanguardia Author"
+            format="webp"
+            loading="lazy"
+          />
+        </div>
 
         <p class="author-name">Alejandro Cano</p>
 
@@ -83,6 +85,7 @@ const { data } = defineProps<BlogDataTypes>()
           :src="data.image"
           :alt="data.alt"
           densities="x1"
+          loading="lazy"
         />
         </div>
         
@@ -111,6 +114,7 @@ const { data } = defineProps<BlogDataTypes>()
             :src="step.img"
             :alt="step.imgAlt"
             densities="x1"
+            loading="lazy"
           />
 
           <div v-if="step.resource" class="external-link" aria-label="link">⬇️📦

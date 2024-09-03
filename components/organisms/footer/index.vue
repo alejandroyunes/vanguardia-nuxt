@@ -24,7 +24,7 @@ const socialLinks = [
 
     <ul class="social-links">
       <li class="item" v-for="socialLink in socialLinks" :key="socialLink.to">
-        <NuxtLink :to="socialLink.to" :aria-label="socialLink.label" rel="noopener noreferrer">
+        <NuxtLink :to="socialLink.to" :aria-label="socialLink.label" rel="noopener noreferrer" target="_blank">
           <component :is="socialLink.icon" />
         </NuxtLink>
       </li>

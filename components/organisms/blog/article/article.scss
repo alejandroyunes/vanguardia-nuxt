@@ -20,8 +20,13 @@
 
       .image {
         display: flex;
-        width: 60px;
-        height: auto;
+        justify-content: center;
+
+        img {
+          width: 48px;
+          height: auto;
+          object-fit: cover;
+        }
       }
 
       .author-name {

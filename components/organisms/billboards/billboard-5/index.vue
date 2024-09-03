@@ -13,6 +13,7 @@ import './billboard-5.scss'
       height="320" 
       sizes="100vw xs:360px sm:500px"
       format="webp" 
+      loading="lazy"
       alt="Imagen de identidad corporativa de diseño gráfico" 
     />
 
