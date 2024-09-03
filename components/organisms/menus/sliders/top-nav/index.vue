@@ -69,7 +69,6 @@ const socialLinks = [
   { icon: InstagramSvg, to: 'https://instagram.com' },
 ]
 
-
 </script>
 
 
@@ -82,7 +81,7 @@ const socialLinks = [
     
     <div class="top-nav-header">
 
-      <NuxtLink to="/" class="top-nav-logo">
+      <NuxtLink @click="toggle" to="/" class="top-nav-logo">
         <Logo />
       </NuxtLink>
 

@@ -72,5 +72,3 @@ const serviceCards = [
 
 
 </template>
-
-

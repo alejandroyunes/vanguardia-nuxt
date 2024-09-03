@@ -45,16 +45,16 @@ const toggleSliderTopNav = () => {
 
       <div class="details">
 
-        <div class="dark-mode-icons" @click="handleTheme()" aria-label="Cambiar tema del sitio web">
-          <MoonSvg v-if="!isDarkMode" class="icon sun" />
-          <SunSvg v-else class="icon moon" />
+        <div class="dark-mode-icons" @click="handleTheme()">
+          <MoonSvg v-if="!isDarkMode" class="icon sun" aria-label="Cambiar tema del sitio web" />
+          <SunSvg v-else class="icon moon" aria-label="Cambiar tema del sitio web" />
         </div>
 
         <Dropdown class="desktop-only" />
         <ButtonsGlowOn text="Contacto" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
 
-        <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav" aria-label="Abrir menú de navegación">
-          <HamburgerVerticalSvg class="icon" />
+        <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
+          <HamburgerVerticalSvg class="icon" aria-label="Abrir menú de navegación" />
         </div>
 
         <SliderTopNav :toggle="toggleSliderTopNav" :isOpen="isSliderTopNavOpen" />
