@@ -15,7 +15,6 @@ import AnimatedColorfulText from '~/components/atoms/animated-colorful-text/inde
       width="500"
       height="320" 
       format="webp"
-      loading="lazy"
       alt="imagen soluciones creativas de diseño gráfico" 
     />
 
