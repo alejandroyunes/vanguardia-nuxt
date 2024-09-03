@@ -21,7 +21,7 @@ const { data } = defineProps<Props>()
     <div class="card" v-for="post in data" :key="post.id">
       <NuxtLink :to="`/blog/${post.url}/${post.id}`">
         <div class="image">
-          <NuxtPicture :src="post.img" sizes="100vw xs:370px" format="webp" :alt="post.alt" loading="lazy" width="370" height="200" />
+          <NuxtPicture :src="post.img" sizes="100vw xs:370px" format="webp" :alt="post.alt" width="370" height="200" />
         </div>
 
         <h2 class="title">{{ post.title }}</h2>
