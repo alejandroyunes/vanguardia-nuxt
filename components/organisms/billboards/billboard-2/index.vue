@@ -21,6 +21,7 @@ const { data } = defineProps<Props>()
       src="/images/services.jpg"
       sizes="100vw sm:300px md:500px"
       format="webp"
+      loading="lazy"
       alt="Imagen de diseño web portfolio"
     />
 
