@@ -9,9 +9,9 @@ import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
 const currentYear = ref(new Date().getFullYear())
 
 const socialLinks = [
-  { icon: FacebookSvg, to: 'https://facebook.com' },
-  { icon: TwitterSvg, to: 'https://twitter.com' },
-  { icon: InstagramSvg, to: 'https://instagram.com' },
+  { icon: FacebookSvg, to: 'https://facebook.com/profile.php?id=61564869706521', label: 'Visítanos en Facebook' },
+  { icon: TwitterSvg, to: 'https://twitter.com/paginaspro_co', label: 'Visítanos en Twitter' },
+  { icon: InstagramSvg, to: 'https://instagram.com/paginasprofesionales.co', label: 'Visítanos en Instagram' },
 ]
 
 </script>
@@ -24,7 +24,7 @@ const socialLinks = [
 
     <ul class="social-links">
       <li class="item" v-for="socialLink in socialLinks" :key="socialLink.to">
-        <NuxtLink :to="socialLink.to">
+        <NuxtLink :to="socialLink.to" :aria-label="socialLink.label" rel="noopener noreferrer">
           <component :is="socialLink.icon" />
         </NuxtLink>
       </li>
