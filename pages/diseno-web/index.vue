@@ -3,22 +3,24 @@ import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import ServiceCards from '~/components/organisms/service-cards/index.vue'
 import Billboard2 from '~/components/organisms/billboards/billboard-2/index.vue'
 import ModalPromo from '~/components/organisms/modals/modal-promo/index.vue'
-
 // Icons
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 useSeoMeta({
-  title: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
-  ogTitle: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
-  description: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web en Colombia.',
-  ogDescription: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web en Colombia.',
+  title: 'Diseño Web Profesional en Colombia',
+  description: 'Impulsa tu presencia digital con Paginas Profesionales, líderes en diseño web en Colombia.',
+  ogSiteName: 'Paginas Profesionales',
+  ogTitle: 'Diseño Web Profesional en Colombia',
+  ogDescription: 'Impulsa tu presencia digital con Paginas Profesionales, líderes en diseño web en Colombia.',
   ogImage: '/meta/diseno-web-profesional.webp',
+  ogUrl: 'https://paginasprofesionales.co/diseno-web',
   ogLocale: 'es_CO',
-  twitterTitle: 'Expertos en Diseño Web - Servicio Profesional - Vanguardia',
+  twitterTitle: 'Diseño Web Profesional en Colombia',
+  twitterDescription: 'Impulsa tu presencia digital con Paginas Profesionales, líderes en diseño web en Colombia.',
+  twitterImage: '/meta/diseno-web-profesional.webp',
   twitterCard: 'summary_large_image',
-  twitterDescription: 'Impulsa tu presencia digital con Vanguardia, los líderes en desarrollo web y digital en Colombia.',
 })
 
 const isModalOpen = ref(false)
