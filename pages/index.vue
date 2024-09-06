@@ -9,15 +9,15 @@ import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 useSeoMeta({
-  title: 'Servicios Web Profesional en Colombia',
+  title: 'Servicio Web Profesional en Colombia',
   description: 'Ofrecemos hosting gratis el primer año con un diseño web único.',
   ogSiteName: 'Paginas Profesionales',
-  ogTitle: 'Servicios Web Profesional en Colombia',
+  ogTitle: 'Servicio Web Profesional en Colombia',
   ogDescription: 'Ofrecemos hosting gratis el primer año con un diseño web único. Aprovecha esta oferta antes de que se termine.',
   ogImage: '/meta/inicio-web-profesional.webp',
   ogUrl: 'https://paginasprofesionales.co',
   ogLocale: 'es_CO',
-  twitterTitle: 'Servicios Web Profesionales en Colombia',
+  twitterTitle: 'Servicio Web Profesional en Colombia',
   twitterDescription: 'Ofrecemos hosting gratis el primer año con un diseño web único. Aprovecha esta oferta antes de que se termine.',
   twitterImage: '/meta/inicio-web-profesional.webp',
   twitterCard: 'summary_large_image',

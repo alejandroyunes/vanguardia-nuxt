@@ -18,15 +18,18 @@ import ProSvg from '~/components/icons/ProSvg.vue'
 import DevelopSvg from '~/components/icons/DevelopSvg.vue'
 
 useSeoMeta({
-  title: 'Mejora el Rendimiento y Visibilidad de tu Sitio Web con SEO - Vanguardia',
-  ogTitle: 'Optimización SEO en Colombia - Aumenta tu Visibilidad y Rendimiento Web',
-  description: 'Nuestros servicios de SEO en Colombia optimizan tu sitio web para mejorar su rendimiento y visibilidad en los motores de búsqueda. Atrae tráfico orgánico y maximiza las conversiones con estrategias SEO efectivas.',
+  title: 'Impulsa tu Visibilidad Online con Estrategias SEO Efectivas',
+  description: 'Destaca en los resultados de búsqueda con nuestros servicios de optimización SEO en Colombia. Mejoramos tu visibilidad online, incrementamos el tráfico orgánico y ayudamos a tu negocio a alcanzar su audiencia objetivo.',
+  ogSiteName: 'Paginas Profesionales',
+  ogTitle: 'Impulsa tu Visibilidad Online con Estrategias SEO Efectivas',
   ogDescription: 'Destaca en los resultados de búsqueda con nuestros servicios de optimización SEO en Colombia. Mejoramos tu visibilidad online, incrementamos el tráfico orgánico y ayudamos a tu negocio a alcanzar su audiencia objetivo.',
-  ogImage: '/meta/seo-optimizacion-colombia.webp',
+  ogImage: '/meta/default.webp',
+  ogUrl: 'https://paginasprofesionales.co/marketing-en-motores-de-busqueda',
   ogLocale: 'es_CO',
-  twitterTitle: 'Mejora tu Presencia Online con Servicios de SEO en Colombia - Vanguardia',
-  twitterCard: 'summary_large_image',
+  twitterTitle: 'Impulsa tu Visibilidad Online con Estrategias SEO Efectivas',
   twitterDescription: 'Potencia tu sitio web con nuestro SEO en Colombia. Aumenta la visibilidad local y general, atrae tráfico dirigido y optimiza el rendimiento de tu negocio online.',
+  twitterImage: '/meta/default.webp',
+  twitterCard: 'summary_large_image',
 })
 
 const iconCards = [

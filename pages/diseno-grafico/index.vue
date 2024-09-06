@@ -6,15 +6,17 @@ import Billboard4 from '~/components/organisms/billboards/billboard-4/index.vue'
 import Billboard5 from '~/components/organisms/billboards/billboard-5/index.vue'
 
 useSeoMeta({
-  title: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
-  ogTitle: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
-  description: 'Mejora la identidad corporativa de tu negocio con nuestro diseño gráfico profesional en Colombia. Desde logotipos hasta publicidad, nuestro equipo asegura una primera impresión impactante y un diseño efectivo.',
-  ogDescription: 'Destaca con nuestro diseño gráfico profesional en Colombia. Creamos identidades corporativas únicas y efectivas que mejoran la apariencia y comunicación de tu negocio. ¡Contáctanos para transformar tu imagen!',
+  title: 'Diseño Gráfico Profesional en Colombia',
+  description: 'Transforma tu identidad corporativa con nuestro diseño gráfico profesional. Creamos logotipos y materiales publicitarios que comunican eficazmente tus ofertas y destacan entre la competencia.',
+  ogTitle: 'Diseño Gráfico Profesional en Colombia',
+  ogDescription: 'Transforma tu identidad corporativa con nuestro diseño gráfico profesional. Creamos logotipos y materiales publicitarios que comunican eficazmente tus ofertas y destacan entre la competencia.',
   ogImage: '/meta/diseno-grafico-profesional.webp',
+  ogUrl: 'https://paginasprofesionales.co/diseno-grafico',
   ogLocale: 'es_CO',
-  twitterTitle: 'Diseño Gráfico Profesional en Colombia - Identidad Corporativa y Más',
+  twitterTitle: 'Diseño Gráfico Profesional en Colombia',
+  twitterDescription: 'Transforma tu identidad corporativa con nuestro diseño gráfico profesional. Creamos logotipos y materiales publicitarios que comunican eficazmente tus ofertas y destacan entre la competencia.',
+  twitterImage: '/meta/diseno-grafico-profesional.webp',
   twitterCard: 'summary_large_image',
-  twitterDescription: 'Transforma tu identidad corporativa con nuestro diseño gráfico profesional en Colombia. Creamos logotipos y materiales publicitarios que comunican eficazmente tus ofertas y destacan entre la competencia.',
 })
 
 const services = [
@@ -81,7 +83,7 @@ const billboard3Data = {
   <Subtitle
     marginTop
     title="Servicios"
-    description="Estos son algunos de los servicios de diseño gráfico que ofrece Vanguardia."
+    description="Estos son algunos de los servicios de diseño gráfico que ofrece Paginas Profesionales."
   />
   
   <Services :data="services" />

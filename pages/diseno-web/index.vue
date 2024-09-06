@@ -10,15 +10,15 @@ import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 useSeoMeta({
   title: 'Diseño Web Profesional en Colombia',
-  description: 'Impulsa tu presencia digital con Paginas Profesionales, líderes en diseño web en Colombia.',
+  description: 'Paginas Web Profesionales desde $599.999, líderes en diseño web en Colombia.',
   ogSiteName: 'Paginas Profesionales',
   ogTitle: 'Diseño Web Profesional en Colombia',
-  ogDescription: 'Impulsa tu presencia digital con Paginas Profesionales, líderes en diseño web en Colombia.',
+  ogDescription: 'Paginas Web Profesionales desde $599.999, líderes en diseño web en Colombia.',
   ogImage: '/meta/diseno-web-profesional.webp',
   ogUrl: 'https://paginasprofesionales.co/diseno-web',
   ogLocale: 'es_CO',
   twitterTitle: 'Diseño Web Profesional en Colombia',
-  twitterDescription: 'Impulsa tu presencia digital con Paginas Profesionales, líderes en diseño web en Colombia.',
+  twitterDescription: 'Paginas Web Profesionales desde $599.999, líderes en diseño web en Colombia.',
   twitterImage: '/meta/diseno-web-profesional.webp',
   twitterCard: 'summary_large_image',
 })

@@ -20,15 +20,18 @@ import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'
 
 useSeoMeta({
-  title: 'Estrategias de Marketing en Redes Sociales | Impulsa tu Negocio Online',
-  ogTitle: 'Estrategias de Marketing en Redes Sociales | Impulsa tu Negocio Online',
-  description: 'Potencia tu marca con nuestro servicio de marketing en redes sociales. Aumenta engagement, ventas y ROI. ¡Consulta gratis ahora!',
-  ogDescription: 'Expertos en marketing digital. Estrategias personalizadas para Facebook, Instagram, LinkedIn y más. Mejora tu visibilidad y convierte seguidores en clientes.',
-  ogImage: '/meta/marketing-redes-sociales-expertos.webp',
+  title: 'Planes de Marketing en Redes Sociales',
+  description: 'Descubre las estrategias más efectivas de marketing en redes sociales para aumentar tu visibilidad y alcanzar a tu audiencia objetivo.',
+  ogSiteName: 'Paginas Profesionales',
+  ogTitle: 'Planes de Marketing en Redes Sociales',
+  ogDescription: 'Descubre las estrategias más efectivas de marketing en redes sociales para aumentar tu visibilidad y alcanzar a tu audiencia objetivo.',
+  ogImage: '/meta/default.webp',
+  ogUrl: 'https://paginasprofesionales.co/marketing-en-redes-sociales',
   ogLocale: 'es_CO',
-  twitterTitle: 'Domina las Redes Sociales | Servicios de Marketing Digital Profesional',
+  twitterTitle: 'Planes de Marketing en Redes Sociales',
+  twitterDescription: 'Descubre las estrategias más efectivas de marketing en redes sociales para aumentar tu visibilidad y alcanzar a tu audiencia objetivo. ',
+  twitterImage: '/meta/default.webp',
   twitterCard: 'summary_large_image',
-  twitterDescription: 'Gestión de redes sociales, creación de contenido viral y análisis de resultados. Haz crecer tu negocio con nuestras estrategias probadas.',
 })
 
 const iconCards = [
