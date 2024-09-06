@@ -9,16 +9,20 @@ import htmlImg from '/images/blog/blog-4.webp'
 import linuxImg from '/images/blog/blog-5.webp'
 
 useSeoMeta({
-  title: 'Blog Vanguardia | Noticias, Análisis y Tendencias Actuales',
-  ogTitle: 'Blog Vanguardia: Tu Fuente de Información y Análisis de Vanguardia',
-  description: 'Explora nuestro blog para las últimas noticias, análisis profundos y tendencias emergentes. Mantente informado con Vanguardia, tu fuente confiable de contenido relevante y actual.',
-  ogDescription: 'Sumérgete en artículos fascinantes, reportajes exclusivos y opiniones expertas en el Blog de Vanguardia. Descubre perspectivas únicas sobre los temas que más importan.',
-  ogImage: '/meta/inicio-web-profesional.webp',
+  title: 'Blog | Noticias, Análisis y Tendencias Sobre Tecnología y Desarrollo Web',
+  description: 'Mantente al día con las últimas noticias sobre innovaciones en tecnología y desarrollo web.',
+  ogSiteName: 'Paginas Profesionales',
+  ogTitle: 'Blog | Noticias, Análisis y Tendencias Sobre Tecnología y Desarrollo Web',
+  ogDescription: 'Mantente al día con las últimas noticias sobre innovaciones en tecnología y desarrollo web.',
+  ogImage: '/meta/default.webp',
+  ogUrl: 'https://paginasprofesionales.co/blog',
   ogLocale: 'es_CO',
-  twitterTitle: 'Blog Vanguardia | Información de Calidad, Análisis Profundo',
+  twitterTitle: 'Blog | Noticias, Análisis y Tendencias Sobre Tecnología y Desarrollo Web',
+  twitterDescription: 'Mantente al día con las últimas noticias sobre innovaciones en tecnología y desarrollo web.',
+  twitterImage: '/meta/default.webp',
   twitterCard: 'summary_large_image',
-  twitterDescription: 'Mantente al día con las últimas innovaciones en tecnología y marketing digital. Lee sobre Next.js, servidores modernos, HTML5, desarrollo web y más en nuestro blog.',
 })
+
 
 const blogListData = [
   {

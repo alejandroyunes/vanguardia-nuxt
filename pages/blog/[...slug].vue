@@ -24,20 +24,6 @@ const NextStyleXTsConfig = "https://res.cloudinary.com/dcpdkock3/image/upload/v1
 const NextStyleXEslint = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599324/blog/articles/next-app-style-x/jpp9emuygb4zv6xv52ah.webp"
 const NextStyleXNextConfig = "https://res.cloudinary.com/dcpdkock3/image/upload/v1702599513/blog/articles/next-app-style-x/cxy3zobcgsgxmp6iue3l.webp"
 
-useSeoMeta({
-  title: 'Blog de Vanguardia: Innovaciones en Tecnología y Marketing Digital',
-  ogTitle: 'Blog de Vanguardia: Innovaciones en Tecnología y Marketing Digital',
-  description: 'Explora nuestros últimos artículos sobre tecnología, desarrollo web y marketing digital. Aprende sobre Next.js, servidores modernos, desarrollo web y más.',
-  ogDescription: 'Descubre las últimas tendencias en tecnología y marketing digital con los artículos del blog de Vanguardia. Desde Next.js y desarrollo web hasta servidores modernos y Linux.',
-  ogImage: '/meta/inicio-web-profesional.webp',
-  ogLocale: 'es_CO',
-  twitterTitle: 'Blog de Vanguardia: Innovaciones en Tecnología y Marketing Digital',
-  twitterCard: 'summary_large_image',
-  twitterDescription: 'Mantente al día con las últimas innovaciones en tecnología y marketing digital. Lee sobre Next.js, servidores modernos, HTML5, desarrollo web y más en nuestro blog.',
-  twitterLabel1: 'Tiempo de lectura',
-  twitterData1: '4 minutos',
-})
-
 const route = useRoute()
 const { slug } = route.params
 
@@ -48,6 +34,7 @@ const blogData = {
       title: "Next 14 app con Style X",
       meta: "Una guía paso a paso para configurar la aplicación Next 14 con Style X. En el mundo siempre cambiante de la tecnología, mantenerse al día significa adoptar las últimas innovaciones.",
       image: NextStyleX,
+      slug: "next-14-app-con-style-x/1",
       alt: "Next 14 app con Style X",
       articleSummary: "Una de esas innovaciones es Next 14, un framework poderoso que promete transformar tu aplicación web. Instalaremos también Style X para nuestros estilos. En esta guía, te guiaremos a través del proceso de instalación de la Next App y Style X.",
       readTime: "10",
@@ -115,6 +102,7 @@ const blogData = {
       title: "Arquitectura de servidor moderno y de alto rendimiento",
       meta: "Este servidor está construido utilizando Node.js y Express.  Utilizando GraphQL con Apollo Server como el servidor GraphQL. Los datos se almacenan en una base de datos PostgreSQL y se acceden a través de Prisma.",
       image: NodeExpressServer,
+      slug: "arquitectura-de-servidor-moderno-y-de-alto-rendimiento/2",
       alt: "Diagrama de Arquitectura del Servidor con Node.js, Express, TypeScript, GraphQL, Apollo Server, PostgreSQL y Prisma",
       articleSummary: "Este servidor será construido utilizando Node.js y Express para manejar las solicitudes HTTP. Utiliza TypeScript para agregar tipado estático a todo el código. La API se implementa utilizando GraphQL con Apollo Server como el servidor GraphQL. Los datos se almacenan en una base de datos PostgreSQL y se acceden a través de Prisma, un ORM (Object-Relational Mapping) para Node.js.",
       readTime: "15",
@@ -211,6 +199,7 @@ const blogData = {
       title: "Guía de Carrera en Desarrollo Web",
       meta: "Descubre habilidades esenciales y perspectivas para una exitosa carrera en desarrollo web en nuestra guía integral.",
       image: webDev,
+      slug: "guia-de-carrera-en-desarrollo-web/3",
       alt: "Computadora con alusión al desarrollo web",
       articleSummary: "Te presentamos nuestra Guía de Carrera en Desarrollo Web: un recurso completo diseñado para personas interesadas en embarcarse en una carrera en desarrollo web. Adéntrate en las perspectivas de la industria y descubre las habilidades y herramientas esenciales necesarias para destacar en este campo dinámico.",
       readTime: "10",
@@ -381,6 +370,7 @@ const blogData = {
       title: "Explorando algunas Etiquetas HTML 5 Poderosas para una Web Moderna",
       meta: "Descubre el potencial de las etiquetas HTML 5 para transformar tu web en una experiencia moderna e interactiva",
       image: HTML5Img,
+      slug: "explorando-algunas-etiquetas-html5-poderosas-para-una-web-moderna/4",
       alt: "Logo HTML 5 para la web moderna",
       articleSummary: "Me sorprende cuántas etiquetas desconocía; algunas de ellas ya las había explorado de manera superficial, mientras que otras apenas las había utilizado. A continuación, echaremos un vistazo a algunas de ellas.",
       readTime: "4",
@@ -431,6 +421,7 @@ const blogData = {
       title: "¿Cómo instalar Linux Mint junto con Windows 11?",
       meta: "Aprende cómo instalar Linux Mint junto a Windows 11.",
       image: linuxWindowsArticle,
+      slug: "como-instalar-linux-mint-junto-con-windows-11/5",
       alt: "Pinguino de Linux y fondo de Windows",
       articleSummary: "Esta guía te mostrará cómo correr Linux Mint y Windows juntos en un mismo PC. Los pasos mencionados sirven para las distribuciones de Linux Mint. Bueno, veamos cómo arrancar Linux de forma dual en un sistema Windows.",
       readTime: "5",

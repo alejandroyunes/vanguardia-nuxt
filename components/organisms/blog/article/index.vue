@@ -17,28 +17,40 @@ type StepType = {
   resource?: string
 }
 
-type BlogArticleType = {
-  id: number
-  title: string
-  meta: string
-  image: string
-  alt: string
-  articleSummary: string
-  readTime: string
-  tags: string[]
-  sharedOn: string[]
-  publishDate: string
-  steps: StepType[]
-}
-
 type BlogDataTypes = {
   data: {
-    blog: BlogArticleType[]
+    title: string
+    meta: string
+    image: string
+    slug: string
+    alt: string
+    articleSummary: string
+    readTime: string
+    tags: string[]
+    sharedOn: string[]
+    publishDate: string
+    steps: StepType[]
   }
 }
 
 const { data } = defineProps<BlogDataTypes>()
 
+useSeoMeta({
+  title: `${data.title}`,
+  description: `${data.meta}`,
+  ogSiteName: 'Paginas Profesionales',
+  ogTitle: `${data.title}`,
+  ogDescription: `${data.meta}`,
+  ogImage: `${data.image}`,
+  ogUrl: `https://paginasprofesionales.co/blog/${data.slug}`,
+  ogLocale: 'es_CO',
+  twitterTitle: `${data.title}`,
+  twitterDescription: `${data.meta}`,
+  twitterImage: `${data.image}`,
+  twitterCard: 'summary_large_image',
+})
+
+console.log(data)
 </script>
 
 <template>
@@ -50,7 +62,7 @@ const { data } = defineProps<BlogDataTypes>()
 
         <div class="image">
           <NuxtPicture
-            src="/images/blog/blog-author.png"
+            src="/images/blog/blog-author.webp"
             alt="Vanguardia Author"
             format="webp"
             loading="lazy"
@@ -85,7 +97,6 @@ const { data } = defineProps<BlogDataTypes>()
           :src="data.image"
           :alt="data.alt"
           densities="x1"
-          loading="lazy"
         />
         </div>
         
