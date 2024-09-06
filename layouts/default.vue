@@ -20,6 +20,19 @@ onMounted(() => {
   }
 })
 
+useHead({
+  htmlAttrs: {
+    lang: 'es'
+  },
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    },
+  ],
+})
+
 </script>
 
 <template>

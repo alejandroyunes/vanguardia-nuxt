@@ -1,26 +1,31 @@
 import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   css: ["~/assets/main.scss"],
   modules: [    
   '@formkit/nuxt',
   '@pinia/nuxt',
-  '@nuxtjs/i18n',
   '@nuxtjs/seo',
-  '@nuxtjs/i18n',
   '@nuxt/image'
 ],
-i18n: {
-  locales: [
-    { code: 'es', iso:'es-CO', file: 'es-CO.js'},
-    { code: 'en', iso: 'en-US', file: 'en-US.js' },
-  ],
-  defaultLocale: 'es',
-  lazy: true,
-  langDir: 'lang/',
+app: {
+  head: {
+    htmlAttrs: { lang: 'es' },
+    title: 'Servicios Web Profesionales en Colombia | Paginas Profesionales',
+    titleTemplate: '%s',
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
+      }
+    ],
+  },
+  rootAttrs: {
+    id: 'paginas-profesionales',
+  },
 },
-
 image: {
   format: ['webp', 'png'],
   screens: {

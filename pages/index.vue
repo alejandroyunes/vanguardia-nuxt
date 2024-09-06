@@ -9,15 +9,18 @@ import ProSvg from '~/components/icons/ProSvg.vue'
 import PromoSvg from '~/components/icons/PromoSvg.vue'
 
 useSeoMeta({
-  title: 'Servicios Web Profesional en Colombia - Vanguardia',
-  ogTitle: 'Servicios Web Profesional en Colombia - Vanguardia',
-  description: 'Descubre los servicios profesionales de Vanguardia: marketing en redes sociales, alojamiento web administrado y optimización SEO. Obtén hosting gratis el primer año con un diseño web único.',
-  ogDescription: 'Vanguardia ofrece servicios clave como marketing en redes sociales, alojamiento web administrado y optimización SEO. Disfruta de hosting gratis el primer año con un diseño web excepcional.',
+  title: 'Servicios Web Profesional en Colombia',
+  description: 'Ofrecemos hosting gratis el primer año con un diseño web excepcional y servicios clave como marketing en redes sociales, alojamiento web administrado y optimización SEO.',
+  ogSiteName: 'PaginasProfesionales',
+  ogTitle: 'Servicios Web Profesional en Colombia',
+  ogDescription: 'Ofrecemos hosting gratis el primer año con un diseño web excepcional y servicios clave como marketing en redes sociales, alojamiento web administrado y optimización SEO.',
   ogImage: '/meta/inicio-web-profesional.webp',
+  ogUrl: 'https://paginasprofesionales.co',
   ogLocale: 'es_CO',
-  twitterTitle: 'Servicios Web Profesionales en Colombia - Vanguardia',
+  twitterTitle: 'Servicios Web Profesionales en Colombia',
+  twitterDescription: 'Ofrecemos hosting gratis el primer año con un diseño web excepcional y servicios clave como marketing en redes sociales, alojamiento web administrado y optimización SEO.',
+  twitterImage: '/meta/inicio-web-profesional.webp',
   twitterCard: 'summary_large_image',
-  twitterDescription: 'Explora los servicios de Vanguardia: marketing en redes sociales, alojamiento web administrado y optimización SEO. Aprovecha el hosting gratis el primer año y un diseño web único.',
   twitterLabel1: 'Tiempo de lectura',
   twitterData1: '2 minutos',
 })
@@ -60,13 +63,10 @@ const serviceCards = [
 <template>
   <Billboard />
 
-  <SubTitle
-    marginTop
-    title="Nuestros Planes"
+  <SubTitle marginTop title="Nuestros Planes"
     description="Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />
 
-  <ServiceCards
-    :data="serviceCards" />
+  <ServiceCards :data="serviceCards" />
 
   <BrandDescription />
 
