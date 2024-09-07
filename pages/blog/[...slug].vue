@@ -77,7 +77,7 @@ const blogData = {
           description: "Esta configuración define opciones del compilador para un proyecto TypeScript, incluyendo detalles como la versión de destino, el soporte para decoradores experimentales, el sistema de módulos y otras configuraciones relacionadas con la comprobación estricta de tipos. También establece las rutas de inclusión de archivos y directorios para el compilador TypeScript. Me gusta establecer el src/app porque estará bajo la carpeta de node_modules.",
           img: NextStyleXTsConfig,
           imgAlt: "Configuración de tsconfig",
-          imgHeight: "333",
+          imgHeight: "400",
           imgWidth: "500"
         },
         {
