@@ -65,6 +65,8 @@ useSeoMeta({
             alt="Vanguardia Author"
             format="webp"
             loading="lazy"
+            width="48"
+            height="48"
           />
         </div>
 
@@ -125,6 +127,8 @@ useSeoMeta({
             :alt="step.imgAlt"
             densities="x1"
             loading="lazy"
+            :width="step.imgWidth"
+            :height="step.imgHeight"
           />
 
           <div v-if="step.resource" class="external-link" aria-label="link">⬇️📦
