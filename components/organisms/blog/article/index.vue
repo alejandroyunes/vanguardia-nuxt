@@ -62,7 +62,7 @@ useSeoMeta({
         <div class="image">
           <NuxtPicture
             src="/images/blog/blog-author.webp"
-            alt="Vanguardia Author"
+            alt="páginas profesionales Author"
             format="webp"
             loading="lazy"
             width="48"

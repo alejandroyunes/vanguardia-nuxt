@@ -84,7 +84,7 @@ const socialLinks = [
         <NuxtPicture
           class="image"
           src="/logo.png"
-          alt="Logo de Vanguardia"
+          alt="Logo de páginas profesionales"
           densities="x1"
           width="100"
           height="100"

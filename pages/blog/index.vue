@@ -73,7 +73,7 @@ const blogListData = [
 <template>
   <Title
     title="Blog"
-    description="Entérate de los últimos artículos de Vanguardia relacionados al mundo del marketing digital y tecnología." />
+    description="Entérate de los últimos artículos de páginas profesionales relacionados al mundo del marketing digital y tecnología." />
 
   <BlogList :data="blogListData" />
 </template>

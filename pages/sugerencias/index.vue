@@ -8,7 +8,7 @@ useSeoMeta({
   description: 'Ayúdanos a mejorar. Comparte tus sugerencias y comentarios sobre Paginas Profesionales. Tu opinión es valiosa para nosotros y contribuye a nuestro crecimiento continuo.',
   ogSiteName: 'Paginas Profesionales',
   ogTitle: 'Tu Opinión Cuenta | Sugerencias y Comentarios para Paginas Profesionales',
-  ogDescription: 'Participa en la evolución de Vanguardia. Envíanos tus ideas, sugerencias y comentarios. Juntos, creamos una experiencia mejor para todos nuestros usuarios.',
+  ogDescription: 'Participa en la evolución de páginas profesionales. Envíanos tus ideas, sugerencias y comentarios. Juntos, creamos una experiencia mejor para todos nuestros usuarios.',
   ogImage: '/meta/default.webp',
   ogUrl: 'https://paginasprofesionales.co/sugerencias',
   ogLocale: 'es_CO',
