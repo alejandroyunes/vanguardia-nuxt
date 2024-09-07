@@ -124,6 +124,8 @@ useSeoMeta({
             :src="step.img"
             :alt="step.imgAlt"
             densities="x1"
+            :width="step.imgWidth"
+            :height="step.imgHeight"
             loading="lazy"
           />
 
