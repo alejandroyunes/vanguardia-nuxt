@@ -8,7 +8,6 @@ import Dropdown from '~/components/organisms/menus/dropdown/desktop/index.vue'
 import SunSvg from '~/components/icons/header/SunSvg.vue'
 import MoonSvg from '~/components/icons/header/MoonSvg.vue'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
-import Logo from '~/public/logo.vue'
 
 import HamburgerVerticalSvg from '~/components/icons/header/HamburgerSvg.vue'
 
@@ -39,8 +38,12 @@ const toggleSliderTopNav = () => {
   <header class="header">
 
     <div class="container">
-      <NuxtLink to="/" class="logo" aria-label="Logo de Vanguardia">
-        <Logo />
+      <NuxtLink to="/" class="logo">
+        <NuxtPicture
+          src="/logo.png"
+          alt="Logo de Vanguardia"
+          densities="x1"
+        />
       </NuxtLink>
 
       <div class="details">

@@ -12,7 +12,7 @@ export default defineNuxtConfig({
 app: {
   head: {
     htmlAttrs: { lang: 'es' },
-    title: 'Servicios Web Profesionales en Colombia | Paginas Profesionales',
+    title: 'Servicios Web Profesionales en Colombia | Páginas Profesionales',
     titleTemplate: '%s',
     link: [
       {

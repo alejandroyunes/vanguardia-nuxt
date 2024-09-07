@@ -16,59 +16,60 @@
       padding: 0 28px;
       height: 68px;
       margin: 20px auto 0;
-    } 
 
-    .logo {
-      svg {
-        height: 100%;
-        width: 48px;
+      .logo {
+        img {
+          height: 100%;
+          width: 56px;
+          display: flex;
+          align-items: center;
+          justify-content: baseline;
+        }
+      }
+
+      .details {
         display: flex;
         align-items: center;
-        justify-content: baseline;
-      }
-    }
-
-    .details {
-      display: flex;
-      align-items: center;
-      
-      .dark-mode-icons {
-        display: flex;
-        margin-right: .4rem;
-        padding: 20px 0;
-        cursor: pointer;
-
-        .sun,
-        .moon {
-          margin-right: 16px;
-          
+        
+        .dark-mode-icons {
+          display: flex;
+          margin-right: .4rem;
+          padding: 20px 0;
+          cursor: pointer;
+  
+          .sun,
+          .moon {
+            margin-right: 16px;
+            
+            @media (max-width: 768px) {
+              margin: 0 10px;
+            }
+          }
           @media (max-width: 768px) {
-            margin: 0 10px;
+            margin-right: 0;
           }
         }
-        @media (max-width: 768px) {
-          margin-right: 0;
+  
+        .hamburger-menu {
+          padding: 10px 10px 10px 0;
+          cursor: pointer;
+  
+          @media (max-width: 768px) {
+            display: flex;
+          }
         }
-      }
-
-      .hamburger-menu {
-        padding: 10px 10px 10px 0;
-        cursor: pointer;
-
-        @media (max-width: 768px) {
-          display: flex;
+  
+        .contact-button {
+          margin-left: 1rem;
+  
+          @media (max-width: 768px) {
+            margin-left: .2rem;
+          }
         }
+  
       }
-
-      .contact-button {
-        margin-left: 1rem;
-
-        @media (max-width: 768px) {
-          margin-left: .2rem;
-        }
-      }
-
-    }
+  
+    } 
 
     @media (max-width: 768px) {
       padding: 0;

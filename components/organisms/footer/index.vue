@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
 import './footer.scss'
-import LogoSvg from '~/public/logo.vue'
 import FacebookSvg from '~/components/icons/social/FacebookSvg.vue'
 import TwitterSvg from '~/components/icons/social/TwitterSvg.vue'
 import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
@@ -19,8 +18,15 @@ const socialLinks = [
 <template>
   <footer class="footer-content">
 
-    <LogoSvg class="logo" />
-    <h2 class="title">Vanguardia.tech</h2>
+    <NuxtPicture
+      class="image"
+      src="/logo.png"
+      alt="Logo de Vanguardia"
+      densities="x1"
+      width="100"
+      height="100"
+    />
+    <h2 class="title">Páginas Profesionales</h2>
 
     <ul class="social-links">
       <li class="item" v-for="socialLink in socialLinks" :key="socialLink.to">
@@ -30,6 +36,6 @@ const socialLinks = [
       </li>
     </ul>
 
-    <p class="copyright">&copy; {{ currentYear }} Vanguardia.tech.</p>
+    <p class="copyright">&copy; {{ currentYear }} Páginas Profesionales.</p>
   </footer>
 </template>

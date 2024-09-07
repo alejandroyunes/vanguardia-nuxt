@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 import './top-nav.scss'
-import Logo from '~/public/logo.vue'
 import ExitSvg from '@/components/icons/ExitSvg.vue'
 import SeoSvg from "~/components/icons/menu/SeoSvg.vue"
 import MarketingSvg from "~/components/icons/menu/MarketingSvg.vue"
@@ -82,7 +81,14 @@ const socialLinks = [
     <div class="top-nav-header">
 
       <NuxtLink @click="toggle" to="/" class="top-nav-logo">
-        <Logo />
+        <NuxtPicture
+          class="image"
+          src="/logo.png"
+          alt="Logo de Vanguardia"
+          densities="x1"
+          width="100"
+          height="100"
+        />
       </NuxtLink>
 
       <div @click="toggle" class="animation-exit">

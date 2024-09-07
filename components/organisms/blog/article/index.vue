@@ -93,10 +93,10 @@ useSeoMeta({
 
         <div class="image">
           <NuxtImg
-          :src="data.image"
-          :alt="data.alt"
-          densities="x1"
-        />
+            :src="data.image"
+            :alt="data.alt"
+            densities="x1"
+          />
         </div>
         
         <div class="step" v-for="step in data.steps" :key="step.id">
@@ -124,8 +124,6 @@ useSeoMeta({
             :src="step.img"
             :alt="step.imgAlt"
             densities="x1"
-            :width="step.imgWidth"
-            :height="step.imgHeight"
             loading="lazy"
           />
 

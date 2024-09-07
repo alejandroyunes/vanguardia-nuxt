@@ -61,40 +61,30 @@ const blogData = {
           ],
           img: NextStyleXDependencies,
           imgAlt: "Next 14 app con Style X",
-          imgHeight: "895",
-          imgWidth: "570"
         },
         {
           title: "Configuración de Babel",
           description: "Babel es un compilador de JavaScript popular que permite a los desarrolladores escribir código en la última versión de ECMAScript (el nombre oficial de la especificación del lenguaje JavaScript) y luego transformarlo o transpilarlo a una versión anterior de JavaScript compatible con la mayoría de los navegadores y entornos:",
           img: NextStyleXBabel,
           imgAlt: "Configuración de Babel para la próxima aplicación y Style X",
-          imgHeight: "621",
-          imgWidth: "483"
         },
         {
           title: "Agregar tsconfig.json",
           description: "Esta configuración define opciones del compilador para un proyecto TypeScript, incluyendo detalles como la versión de destino, el soporte para decoradores experimentales, el sistema de módulos y otras configuraciones relacionadas con la comprobación estricta de tipos. También establece las rutas de inclusión de archivos y directorios para el compilador TypeScript. Me gusta establecer el src/app porque estará bajo la carpeta de node_modules.",
           img: NextStyleXTsConfig,
           imgAlt: "Configuración de tsconfig",
-          imgHeight: "1032",
-          imgWidth: "688"
         },
         {
           title: "Agregar eslintrc.js",
           description: "ESLint es una herramienta ampliamente utilizada y de código abierto para el análisis estático de código en JavaScript. Ayuda a los desarrolladores a identificar y corregir problemas en su código mediante la aplicación de un conjunto de normas o reglas de codificación.",
           img: NextStyleXEslint,
           imgAlt: "Configuración de Eslint",
-          imgHeight: "265",
-          imgWidth: "597"
         },
         {
           title: "Agregar next.config.js",
           description: "next.config.js es un archivo de configuración utilizado en Next.js. Este archivo nos permite personalizar varios aspectos del proceso de construcción y del comportamiento en tiempo de ejecución de Next.js.",
           img: NextStyleXNextConfig,
           imgAlt: "Configuración de next config",
-          imgHeight: "265",
-          imgWidth: "597"
         },
         {
           title: "Crear page.tsx y el diseño",
@@ -135,8 +125,6 @@ const blogData = {
           ],
           img: NodeExpressServerPackage,
           imgAlt: "Paquetes de Node.js para el servidor",
-          imgHeight: "553",
-          imgWidth: "311"
         },
         {
           title: "Configuración de Nodemon",
