@@ -50,7 +50,6 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-console.log(data)
 </script>
 
 <template>
