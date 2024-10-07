@@ -43,6 +43,8 @@ const toggleSliderTopNav = () => {
           src="/logo.png"
           alt="Logo de páginas profesionales"
           densities="x1"
+          sizes="xs:56px sm:56px md:56px lg:56px xl:56px xxl:56px xxxl:56px"
+          format="webp"
         />
       </NuxtLink>
 
