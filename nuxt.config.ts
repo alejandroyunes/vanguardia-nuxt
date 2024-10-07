@@ -1,13 +1,14 @@
 import { defineNuxtConfig } from "nuxt/config"
 
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   css: ["~/assets/main.scss"],
   modules: [    
   '@formkit/nuxt',
   '@pinia/nuxt',
   '@nuxtjs/seo',
-  '@nuxt/image'
+  '@nuxt/image',
+  '@zadigetvoltaire/nuxt-gtm'
 ],
 app: {
   head: {
@@ -38,5 +39,17 @@ image: {
     xxxl: 2000,
   },
 },
+gtm: {
+  id: 'GTM-53GHMHBC',
+  defer: false,
+  compatibility: false,
+  enabled: true,
+  debug: false,
+  loadScript: true,
+  enableRouterSync: true,
+  ignoredViews: ['homepage'],
+  trackOnNextTick: false,
+  devtools: false,
+  },  
   compatibilityDate: "2024-07-11",
 })
