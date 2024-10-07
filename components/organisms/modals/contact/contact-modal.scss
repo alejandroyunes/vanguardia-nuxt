@@ -1,4 +1,4 @@
-.modal-promo {
+.contact-modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,10 +7,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--background-modal);
+  background-color: var(--black-transparent);
   z-index: 11;
 
-  .modal-inner {
+  .contact-modal-inner {
     background-color: var(--background);
     padding: 10px 45px 48px;
     border-radius: 15px;
@@ -24,7 +24,7 @@
     border: 1px solid var(--border);
     margin: 0 20px;
 
-    .btn-close {
+    .contact-modal-btn-close {
       cursor: pointer;
       position: absolute;
       top: 16px;
@@ -47,9 +47,18 @@
       }
     }
   
-    .form {
+    .contact-modal-form {
       margin-top: 40px;
       width: 100%;
+
+      .contact-modal-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading);
+        text-align: center;
+        margin-bottom: 28px;
+        line-height: 2.5rem;
+      }
 
       .formkit-form .formkit-actions {
         display: none;
@@ -127,49 +136,42 @@
     
         }
       }
-  
-      .modal-description {
+    }
+
+    .contact-modal-info {
+      margin-top: 40px;
+
+      .contact-modal-title {
         font-size: 2rem;
         font-weight: 700;
-        color: var(--primary);
+        color: var(--heading-soft);
         text-align: center;
-        margin-bottom: 28px;
+        margin-bottom: 8px;
         line-height: 2.5rem;
-  
-        span {
-          color: var(--heading);
-        }
       }
-    
-      .btn-submit {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--primary);
-        color: var(--white);
+
+      .contact-modal-description {
+        font-size: 1rem;
+        color: var(--heading);
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 1.5rem;
+      }
+
+      .submit-btn {
         margin-top: 32px;
-        width: 100%;
-        max-width: 300px;
-        padding: 15px;
-        border-radius: 48px;
-        border: none;
-        cursor: pointer;
-        margin: 0 auto;
-        
-        span {
-          padding-left: 12px;
-          font-size: 1rem;
-        }
       }
-    
-      .btn-disabled {
-        opacity: 0.7;
-        cursor: not-allowed;
-      }
-    }
+    } 
   
     @media screen and (max-width: 758px) {
       padding: 20px 20px 32px;
+
+      .modal-info {
+        .modal-title {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+      }
     }
   }
 }

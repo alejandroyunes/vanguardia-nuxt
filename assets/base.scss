@@ -12,12 +12,18 @@
   --danger: #dc3545;
 
   --white: rgb(255, 255, 255);
-  --white-soft:rgb(182, 181, 181);
+  --white-soft:rgb(243, 243, 243);
   --white-base: rgb(238, 238, 238);
 
+  --white-transparent: rgba(255, 255, 255, 0.5);
+  --white-transparent-base: rgba(255, 255, 255, 0.1);
+
   --black: #282828;
-  --black-soft: rgb(71, 71, 71);
-  --black-base: rgb(92, 91, 91);
+  --black-soft: rgb(28, 28, 28);
+  --black-base: rgb(107, 107, 107);
+
+  --black-transparent: rgba(0, 0, 0, 0.5);
+  --black-transparent-base: rgba(0, 0, 0, 0.1);
 
   --gray: rgb(70, 70, 70);
   --gray-soft: rgb(109, 100, 100);
@@ -46,8 +52,6 @@
 
   --border-white: rgb(153, 153, 153);
   --border-black: rgb(142, 109, 109);
-
-  --background-modal: rgba(0, 0, 0, 0.5);
 
   --max-width: 1280px;
   --tablet-width: 1024px;
@@ -79,6 +83,9 @@
   --shadow-img: var(--box-shadow-card-black);
 
   --border: var(--border-black);
+
+  --button-transparent: var(--black-transparent);
+  --button-transparent-base: var(--black-transparent-base);
 }
 
 :root[data-color-scheme="dark"] {
@@ -106,6 +113,9 @@
   --shadow-img: var(--box-shadow-img-white);
 
   --border: var(--border-white);
+
+  --button-transparent: var(--white-transparent);
+  --button-transparent-base: var(--white-transparent-base);
 }
 
 *,

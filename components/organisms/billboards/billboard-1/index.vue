@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import './billboard-1.scss'
 import ButtonsGlowOn from '~/components/atoms/buttons/glow-on/index.vue'
-import ModalPromo from '~/components/organisms/modals/modal-promo/index.vue'
+import ModalPromo from '~/components/organisms/modals/contact/index.vue'
 import SvgsBillboard from '~/components/icons/web-dev.vue'
 import AnimateText from '~/components/atoms/animated-colorful-text/index.vue'
 
