@@ -56,7 +56,7 @@ const toggleSliderTopNav = () => {
         </div>
 
         <Dropdown class="desktop-only" />
-        <ButtonsGlowOn text="Contacto" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
+        <ButtonsGlowOn text="Contacto" link="/contacto" class="contact-button desktop-only" aria-label="Ir a la sección de contacto" />
 
         <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
           <HamburgerVerticalSvg class="icon" aria-label="Abrir menú de navegación" />
