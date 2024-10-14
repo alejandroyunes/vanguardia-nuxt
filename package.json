@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --port 3003",
+    "dev": "nuxt dev --port 3004",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"

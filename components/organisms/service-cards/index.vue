@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import './service-cards.scss'
-import Button from '~/components/atoms/buttons/default/index.vue'
+import Button from '~/components/atoms/buttons/fill/index.vue'
 
 type Props = {
   data: {

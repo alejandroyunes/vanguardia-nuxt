@@ -23,8 +23,8 @@ const socialLinks = [
       src="/logo.png"
       alt="Logo de páginas profesionales"
       densities="x1"
-      width="100"
-      height="100"
+      sizes="xs:100px md:100px xl:100px"
+      format="png"
     />
     <h2 class="title">Páginas Profesionales</h2>
 
