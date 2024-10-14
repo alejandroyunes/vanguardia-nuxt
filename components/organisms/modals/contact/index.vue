@@ -5,12 +5,12 @@ import { reset } from '@formkit/core'
 import { AxiosError } from 'axios'
 import Loading from '~/components/atoms/loading/loading-icon/index.vue'
 import CrossSvg from '~/components/icons/CrossSvg.vue'
+
 import Button from '~/components/atoms/buttons/fill/index.vue'
 import { formPost } from '~/utils/apis/FormPostMethod'
 
 const name = ref()
-const phone = ref()
-const message = ref()
+const email = ref()
 
 const isResponseError = ref(false)
 const isRequestError = ref(false)
@@ -79,32 +79,23 @@ const submitHandler = async (createForm: Props) => {
 
           <FormKit type="group" name="contact">
            
-            <div class="form-group">
+            <div class="form-group-input">
               <label for="name">Nombre</label>
-              <FormKit type="text" placeholder="Ana Perez" maxLength="30" minLength="3" v-model="name" name="name"
+              <FormKit type="text" placeholder="Juan Pérez" maxLength="30" minLength="3" v-model="name" name="name"
                 validation="required" />
             </div>
 
-            <div class="form-group">
-              <label for="tel">Teléfono</label>
-              <FormKit maxLength="10" minLength="10" inputmode="numeric" name="phone"
-                oninput="this.value = this.value.replace(/\D/g, '')"
-                :validation="[['matches', /^.{10,10}$/], ['required']]" v-model.number="phone" type="text"
-                placeholder="301 456 7890" />
-            </div>
-
-            <div class="form-group">
-              <label for="message">Mensaje</label>
+            <div class="form-group-input">
+              <label for="email">Email</label>
               <FormKit
-                type="textarea"
-                name="message"
-                placeholder="Mensaje"
-                maxLength="85"
-                v-model="message"
-                validation="required" />
+                type="email"
+                placeholder="juanperez@email.com"
+                v-model="email"
+                name="email"
+                validation="required|email" />
             </div>
 
-            <Button :disabled="!state.valid" type="submit" text="Solicitar promo" />
+            <Button :disabled="!state.valid" type="submit" text="Quiero mi promo" />
           </FormKit>
 
         </FormKit>
@@ -114,17 +105,17 @@ const submitHandler = async (createForm: Props) => {
       <div v-else class="contact-modal-info">
 
         <h3 v-show="isLoading" class="contact-modal-title">Cargando...</h3>
-        <p v-show="isLoading" class="contact-modal-description">Espera un momento por favor</p>
+        <p v-show="isLoading" class="contact-modal-description">Cargando...</p>
         <Loading v-show="isLoading" />
 
-        <h3 v-show="isSuccess" class="contact-modal-title">Gracias por contactarnos</h3>
-        <p v-show="isSuccess" class="contact-modal-description">En breve nos pondremos en contacto contigo</p>
+        <h3 v-show="isSuccess" class="contact-modal-title">¡Gracias por contactarnos!</h3>
+        <p v-show="isSuccess" class="contact-modal-description">En breve nos pondremos en contacto contigo.</p>
 
-        <h3 v-show="isResponseError" class="contact-modal-title">Hubo un error con el envío</h3>
-        <p v-show="isResponseError" class="contact-modal-description">Por favor intenta nuevamente en unos minutos</p>
-
-        <h3 v-show="isRequestError" class="contact-modal-title">Error de comunicación</h3>
-        <p v-show="isRequestError" class="contact-modal-description">Por favor, asegúrate de tener una conexión de internet estable y vuelve a intentarlo. Si el problema persiste, por favor contacta al soporte para obtener asistencia.</p>
+        <h3 v-show="isResponseError" class="contact-modal-title">¡Ups! Algo salió mal</h3>
+        <p v-show="isResponseError" class="contact-modal-description">Intenta nuevamente</p>
+        
+        <h3 v-show="isRequestError" class="contact-modal-title">¡Ups! Algo salió mal</h3>
+        <p v-show="isRequestError" class="contact-modal-description">Intenta nuevamente</p>
 
         <Button v-show="!isLoading" class="btn-submit" @click="toggleModal" text="Cerrar" />
 
