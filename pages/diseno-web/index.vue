@@ -2,7 +2,7 @@
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import ServiceCards from '~/components/organisms/service-cards/index.vue'
 import Billboard2 from '~/components/organisms/billboards/billboard-2/index.vue'
-import ModalPromo from '~/components/organisms/modals/contact/index.vue'
+import ModalPromo from '~/components/organisms/modals/contact-promo/index.vue'
 // Icons
 import PremiumSvg from '~/components/icons/PremiumSvg.vue'
 import ProSvg from '~/components/icons/ProSvg.vue'

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import './contact-modal.scss'
+import './contact-promo-modal.scss'
 import { ref } from 'vue'
 import { reset } from '@formkit/core'
 import { AxiosError } from 'axios'
@@ -64,18 +64,18 @@ const submitHandler = async (createForm: Props) => {
 </script>
 
 <template>
-  <section class="contact-modal">
-    <div class="contact-modal-inner">
+  <section class="contact-promo-modal">
+    <div class="contact-promo-modal-inner">
       
-      <div @click="toggleModal" class="contact-modal-btn-close">
+      <div @click="toggleModal" class="contact-promo-modal-btn-close">
         <CrossSvg />
       </div>
 
-      <div class="contact-modal-form" v-if="!isConfirmInfoVisible">
+      <div class="contact-promo-modal-form" v-if="!isConfirmInfoVisible">
 
-        <h2 class="contact-modal-title"><span>¡Aprovecha esta promoción </span> ahora!</h2>
+        <h2 class="contact-promo-modal-title"><span>¡Aprovecha esta promoción </span> ahora!</h2>
 
-        <FormKit type="form" id="contact-modal-form" #default="{ state }" @submit="submitHandler">
+        <FormKit type="form" id="contact-promo-modal-form" #default="{ state }" @submit="submitHandler">
 
           <FormKit type="group" name="contact">
            
@@ -102,20 +102,20 @@ const submitHandler = async (createForm: Props) => {
 
       </div>
 
-      <div v-else class="contact-modal-info">
+      <div v-else class="contact-promo-modal-info">
 
-        <h3 v-show="isLoading" class="contact-modal-title">Cargando...</h3>
-        <p v-show="isLoading" class="contact-modal-description">Cargando...</p>
+        <h3 v-show="isLoading" class="contact-promo-modal-title">Cargando...</h3>
+        <p v-show="isLoading" class="contact-promo-modal-description">Cargando...</p>
         <Loading v-show="isLoading" />
 
-        <h3 v-show="isSuccess" class="contact-modal-title">¡Gracias por contactarnos!</h3>
-        <p v-show="isSuccess" class="contact-modal-description">En breve nos pondremos en contacto contigo.</p>
+        <h3 v-show="isSuccess" class="contact-promo-modal-title">¡Gracias por contactarnos!</h3>
+        <p v-show="isSuccess" class="contact-promo-modal-description">En breve nos pondremos en contacto contigo.</p>
 
-        <h3 v-show="isResponseError" class="contact-modal-title">¡Ups! Algo salió mal</h3>
-        <p v-show="isResponseError" class="contact-modal-description">Intenta nuevamente</p>
+        <h3 v-show="isResponseError" class="contact-promo-modal-title">¡Ups! Algo salió mal</h3>
+        <p v-show="isResponseError" class="contact-promo-modal-description">Intenta nuevamente</p>
         
-        <h3 v-show="isRequestError" class="contact-modal-title">¡Ups! Algo salió mal</h3>
-        <p v-show="isRequestError" class="contact-modal-description">Intenta nuevamente</p>
+        <h3 v-show="isRequestError" class="contact-promo-modal-title">¡Ups! Algo salió mal</h3>
+        <p v-show="isRequestError" class="contact-promo-modal-description">Intenta nuevamente</p>
 
         <Button v-show="!isLoading" class="btn-submit" @click="toggleModal" text="Cerrar" />
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 
 import Title from '~/components/atoms/title-description/index.vue'
-import SuggestionsForm from '~/components/organisms/form/suggestions/index.vue'
+import ContactForm from '~/components/organisms/form/contact/index.vue'
 
 useSeoMeta({
   title: 'Comparte tus Ideas | Sugerencias y Comentarios sobre Paginas Profesionales',
@@ -26,5 +26,5 @@ useSeoMeta({
     title="Sugerencias"
     description="Envíanos tus sugerencias y comentarios sobre Paginas Profesionales" />
   
-  <SuggestionsForm />
+  <ContactForm />
 </template>

@@ -1,4 +1,4 @@
-.contact-modal {
+.contact-promo-modal {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,7 +10,7 @@
   background-color: var(--black-transparent);
   z-index: 11;
 
-  .contact-modal-inner {
+  .contact-promo-modal-inner {
     background-color: var(--background);
     padding: 10px 45px 32px;
     border-radius: 15px;
@@ -24,7 +24,7 @@
     border: 1px solid var(--border);
     margin: 0 20px;
 
-    .contact-modal-btn-close {
+    .contact-promo-modal-btn-close {
       cursor: pointer;
       position: absolute;
       top: 16px;
@@ -47,11 +47,11 @@
       }
     }
   
-    .contact-modal-form {
+    .contact-promo-modal-form {
       margin-top: 40px;
       width: 100%;
 
-      .contact-modal-title {
+      .contact-promo-modal-title {
         font-size: 2rem;
         font-weight: 700;
         color: var(--heading);
@@ -136,7 +136,7 @@
       }
     }
 
-    .contact-modal-info {
+    .contact-promo-modal-info {
       margin-top: 40px;
 
       .contact-modal-title {
@@ -164,8 +164,8 @@
     @media screen and (max-width: 758px) {
       padding: 20px 20px 32px;
 
-      .modal-info {
-        .modal-title {
+      .contact-promo-modal-info {
+        .contact-promo-modal-title {
           font-size: 1.5rem;
           line-height: 2rem;
         }
