@@ -23,11 +23,9 @@ const { data } = defineProps<Props>()
         <div class="image">
           <NuxtPicture
             :src="post.img"
-            sizes="100vw xs:370px"
+            sizes="xs:370px md:370px"
             format="webp"
             :alt="post.alt"
-            width="370"
-            height="200"
             loading="lazy"
           />
         </div>

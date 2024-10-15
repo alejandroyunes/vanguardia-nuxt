@@ -13,13 +13,13 @@
 
     .image {
       cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      max-width: 370px;
+      margin: 0 auto;
+      
       img {
-        max-width: 370px;
+        justify-content: baseline;
         width: 100%;
+        height: auto;
         box-shadow: var(--shadow-img);
       }
     }

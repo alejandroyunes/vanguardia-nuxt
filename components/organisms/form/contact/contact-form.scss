@@ -1,10 +1,12 @@
 .contact-form {
   width: 100%;
-
+  margin-top: 40px;
+  
   .contact-form-inner {
     margin: 0 auto;
     padding: 40px 24px 30px;
     box-shadow: var(--shadow-card);
+    max-width: var(--tablet-width);
 
     .formkit-form .formkit-actions {
       display: none;
