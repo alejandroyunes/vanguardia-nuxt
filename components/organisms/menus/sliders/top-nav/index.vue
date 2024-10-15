@@ -70,7 +70,6 @@ const socialLinks = [
 
 </script>
 
-
 <template>
 
   <div
@@ -86,8 +85,8 @@ const socialLinks = [
           src="/logo.png"
           alt="Logo de páginas profesionales"
           densities="x1"
-          width="100"
-          height="100"
+          sizes="xs:48px md:48px xl:48px"
+          format="png"
         />
       </NuxtLink>
 

@@ -1,7 +1,6 @@
 <script setup lang="ts">
-import Contact from '~/components/organisms/contact/index.vue'
 import Title from '~/components/atoms/title-description/index.vue'
-
+import ContactForm from '~/components/organisms/form/contact/index.vue'
 useSeoMeta({
   title: 'Contacto de Páginas Profesionales',
   description: 'Conecta con nosotros para obtener más información sobre nuestros servicios.',
@@ -24,5 +23,6 @@ useSeoMeta({
     martinTop
     title="Contacto"
     description="Contáctanos para obtener más información sobre nuestros servicios." />
-  <Contact />
+    
+  <ContactForm />
 </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import './service-cards-1.scss'
-import Button from '~/components/atoms/buttons/default/index.vue'
+import Button from '~/components/atoms/buttons/fill/index.vue'
 import LightningSvg from '~/components/icons/LightningSvg.vue'
 
 type Props = {

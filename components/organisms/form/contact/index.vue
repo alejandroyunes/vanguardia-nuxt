@@ -60,9 +60,9 @@ const submitHandler = async (createForm: Props) => {
 </script>
 
 <template>
-  <section class="contact-form-inner">
+  <section class="contact-form">
 
-    <div class="contact-form" v-if="!isConfirmInfoVisible">
+    <div class="contact-form-inner" v-if="!isConfirmInfoVisible">
 
       <FormKit type="form" id="contact-page" #default="{ state }" @submit="submitHandler">
 

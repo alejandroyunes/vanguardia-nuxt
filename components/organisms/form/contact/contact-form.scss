@@ -1,7 +1,7 @@
-.contact-form-inner {
+.contact-form {
   width: 100%;
-  
-  .contact-form {
+
+  .contact-form-inner {
     margin: 0 auto;
     padding: 40px 24px 30px;
     box-shadow: var(--shadow-card);
@@ -184,8 +184,9 @@
 
 @media screen and (max-width: 758px) {
 
-  .contact-form-inner {
-    .contact-form {
+  .contact-form {
+    padding: 0 16px;
+    .contact-form-inner {
       .form-group-inline {
         flex-direction: column;
         gap: 0;

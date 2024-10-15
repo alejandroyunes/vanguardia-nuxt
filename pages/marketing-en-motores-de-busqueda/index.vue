@@ -202,8 +202,8 @@ const serviceCards = [
   />
 
   <SubTitle
-      title="Nuestros planes de SEO"
-      description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
+    title="Nuestros planes de SEO"
+    description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
   />
 
   <ServiceCards :data="serviceCards" />
