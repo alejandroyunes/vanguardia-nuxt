@@ -7,7 +7,6 @@ type Props = {
   data: {
     title: string
     price: string
-    star?: boolean
     icon: Component
     iconAlt: string
     features: {

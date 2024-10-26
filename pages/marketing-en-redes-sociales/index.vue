@@ -2,8 +2,7 @@
 import Title from '~/components/atoms/title-description/index.vue'
 import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 import IconCards from '~/components/organisms/icon-cards/index.vue'
-import MarketingAgreement from '~/components/atoms/marketing-agreement/index.vue'
-import ServicesCards from '~/components/organisms/service-cards-1/index.vue'
+import ServicesCards1 from '~/components/organisms/service-cards-1/index.vue'
 //icons
 import BrowserSvg from '~/components/icons/BrowserSvg.vue'
 import StatisticsUpSvg from '~/components/icons/StatisticsUpSvg.vue'
@@ -39,7 +38,7 @@ const iconCards = [
     icon: BrowserSvg,
     iconAlt: 'Configuración de páginas en redes sociales - Marketing digital',
     title: 'Configuración de páginas en redes sociales',
-    description: 'Si aún no tienes presencia en redes, el equipo se encargará de crear y configurar tus páginas de manera profesional.'
+    description: 'Si aún no tienes presencia en redes, nos encargaremos de crear y configurar tus páginas de manera profesional.'
   },
   {
     icon: StatisticsUpSvg,
@@ -57,7 +56,7 @@ const iconCards = [
     icon: BrandPromoSvg,
     iconAlt: 'Promoción de marca en redes sociales - Aumento de visibilidad',
     title: 'Promoción de la marca',
-    description: 'El equipo se encargará de compartir tus publicaciones con audiencias específicas, aumentando la visibilidad y el alcance de tu marca.'
+    description: 'Nos encargaremos de compartir tus publicaciones con audiencias específicas, aumentando la visibilidad y el alcance de tu marca.'
   },
   {
     icon: CommunitySvg,
@@ -87,15 +86,14 @@ const iconCards = [
     icon: WebDesignSvg,
     iconAlt: 'Diseño gráfico para redes sociales - Contenido visual atractivo',
     title: 'Diseño gráfico',
-    description: 'El equipo creará diseños gráficos atractivos para todas tus publicaciones, asegurando que sean visualmente impactantes y alineados con la identidad de tu marca.',
+    description: 'Crearemos diseños gráficos atractivos para todas tus publicaciones, asegurando que sean visualmente impactantes y alineados con la identidad de tu marca.',
   }
 ]
 
-const servicesCards = [
+const servicesCards1 = [
   {
     title: 'Esencial',
-    price: '$599.999',
-    star: true,
+    price: '$399.999',
     icon: PromoSvg,
     iconAlt: 'Paquete Esencial de Marketing en Redes Sociales - Facebook e Instagram',
     features: [
@@ -103,21 +101,22 @@ const servicesCards = [
         text: 'Facebook & Instagram',
       },
       {
-        text: 'Llamada de inicio',
+        text: 'Inicio de campaña',
       },
       {
-        text: 'Gasto mensual en anuncios $150.000',
+        text: 'Gasto mensual en anuncios $100.000',
         star: true
       },
       {
-        text: '1 unidades de anuncios patrocinados',
+        text: '1 unidad de anuncios patrocinados.',
         star: true
       },
       {
-        text: 'Hasta 4 creaciones de publicaciones por mes',
+        text: 'Hasta 8 creaciones de publicaciones por mes.',
+        star: true
       },
       {
-        text: 'Publicaciones bilingües/traducciones incluidas',
+        text: 'Publicaciones bilingües/traducciones incluidas.',
       },
       {
         text: 'Post boost',
@@ -138,7 +137,7 @@ const servicesCards = [
         text: 'Facebook & Instagram',
       },
       {
-        text: 'Llamada de inicio',
+        text: 'Inicio de campaña',
       },
       {
         text: 'Gasto mensual en anuncios $300.000',
@@ -149,10 +148,11 @@ const servicesCards = [
         star: true
       },
       {
-        text: 'Hasta 4 creaciones de publicaciones por mes',
+        text: 'Hasta 16 creaciones de publicaciones por mes.',
+        star: true
       },
       {
-        text: 'Publicaciones bilingües/traducciones incluidas',
+        text: 'Publicaciones bilingües/traducciones incluidas.',
       },
       {
         text: 'Post boost',
@@ -173,7 +173,7 @@ const servicesCards = [
         text:   'Facebook & Instagram',
       },
       {
-        text: 'Llamada de inicio',
+        text: 'Inicio de campaña',
       },
       {
         text: 'Gasto mensual en anuncios $400.000',
@@ -184,7 +184,8 @@ const servicesCards = [
         star: true
       },
       {
-        text: 'Hasta 4 creaciones de publicaciones por mes',
+        text: 'Hasta 24 creaciones de publicaciones por mes',
+        star: true
       },
       {
         text: 'Publicaciones bilingües/traducciones incluidas',
@@ -216,8 +217,6 @@ const servicesCards = [
     title="Nuestros planes de marketing en redes sociales"
     description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia." />
 
-  <ServicesCards :data="servicesCards" />
-
-  <MarketingAgreement />
+  <ServicesCards1 :data="servicesCards1" />
 
 </template>
