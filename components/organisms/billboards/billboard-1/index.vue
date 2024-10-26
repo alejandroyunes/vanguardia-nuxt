@@ -17,10 +17,14 @@ const toggleModal = () => {
   <section class="billboard-1">
 
     <div class="details">
-      <h1 class="title">¡Obtén una página web profesional con Hosting
+      <div>
+        <h1 class="title">¡Obtén un sitio web profesional con Hosting
         <AnimateText>GRATIS</AnimateText> durante el primer año! 
-      </h1>
-      <p class="description">Elige entre una variedad de diseños modernos por solo $500,000.</p>
+        </h1>
+        <p class="conditions">* Solo aplica para clientes en Colombia</p>
+      </div>
+
+      <p class="description">Diseño único y características exclusivas por solo $599,000.</p>
       
       <ButtonsGlowOn
         class="learn-more"

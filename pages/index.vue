@@ -29,18 +29,18 @@ const serviceCards = [
     subtitle: 'Marketing en redes sociales',
     price: '$399.999',
     icon: PromoSvg,
-    iconAlt: 'Imagen del servicio de marketing en redes sociales',
-    description: 'Contrata a nuestro equipo de expertos en marketing en redes sociales y aumenta tus oportunidades de negocio. Dirígete a clientes potenciales en función de grupos demográficos específicos.',
+    iconAlt: 'Imagen que simboliza el servicio de marketing en redes sociales',
+    description: 'Nuestro equipo de expertos en marketing en redes sociales te ayudará a aumentar tus oportunidades de negocio. Enfocandose en clientes potenciales en función de grupos demográficos.',
     buttonText: 'Leer más',
     link: 'marketing-en-redes-sociales'
   },
   {
     title: 'Hosting',
-    subtitle: 'Alojamiento web administrado - cPanel',
+    subtitle: 'Alojamiento web',
     price: '$49.999',
     icon: ProSvg,
-    iconAlt: 'Imagen del servicio de alojamiento web administrado - cPanel',
-    description: '¡Potente alojamiento de sitios web administrado con cPanel, correos electrónicos ilimitados, 25 GB de espacio en disco, Jet Backup y 500 GB de ancho de banda!',
+    iconAlt: 'Imagen que simboliza el servicio de alojamiento web',
+    description: 'Potente alojamiento de sitios web en servidores en la nube de alta calidad de Amazon Web Services, administramos tus sitios web y servidores con alertas de seguridad.',
     buttonText: 'Leer más',
     link: 'alojamiento-web-administrado-cpanel'
   },
@@ -49,21 +49,22 @@ const serviceCards = [
     subtitle: 'Marketing en motores de búsqueda',
     price: '$999.999',
     icon: PremiumSvg,
-    iconAlt: 'Imagen del servicio de marketing en motores de búsqueda',
-    description: 'Haga que su sitio web aparezca en los principales motores de búsqueda con nuestro servicio de optimización de motores de búsqueda y marketing de motores de búsqueda.',
+    iconAlt: 'Imagen que simboliza el servicio de marketing en motores de búsqueda',
+    description: 'Utilizamos tecnicas white hat para aparecer en los principales motores de búsqueda con nuestro servicio de optimización de motores de búsqueda y marketing de motores de búsqueda.',
     buttonText: 'Leer más',
     link: 'marketing-en-motores-de-busqueda'
   }
 ]
-
 
 </script>
 
 <template>
   <Billboard />
 
-  <SubTitle marginTop title="Nuestros Planes"
-    description="Agencia Colombiana de marketing que ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />
+  <SubTitle 
+    marginTop
+    title="Nuestros Planes"
+    description="Agencia Colombiana de marketing ofrece soluciones efectivas y personalizadas a empresas de cualquier tamaño." />
 
   <ServiceCards :data="serviceCards" />
 

@@ -7,7 +7,7 @@ import Loading from '~/components/atoms/loading/loading-icon/index.vue'
 import CrossSvg from '~/components/icons/CrossSvg.vue'
 
 import Button from '~/components/atoms/buttons/fill/index.vue'
-import { formPost } from '~/utils/apis/FormPostMethod'
+import { formPost } from '~/services/FormPostMethod'
 
 const name = ref()
 const email = ref()
@@ -95,7 +95,7 @@ const submitHandler = async (createForm: Props) => {
                 validation="required|email" />
             </div>
 
-            <Button :disabled="!state.valid" type="submit" text="Quiero mi promo" />
+            <Button :disabled="!state.valid" type="submit" text="Quiero la promo" />
           </FormKit>
 
         </FormKit>

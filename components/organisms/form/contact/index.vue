@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import { AxiosError } from 'axios'
 import { reset } from '@formkit/core'
 import Loading from '~/components/atoms/loading/loading-icon/index.vue'
-import { formPost } from '~/utils/apis/FormPostMethod'
+import { formPost } from '~/services/FormPostMethod'
 import Button from '~/components/atoms/buttons/fill/index.vue'
 
 const name = ref('')
