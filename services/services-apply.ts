@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-const apiAccessToken = import.meta.env.API
-
 type ServicesFormModel = {
   name: string
   email: string
@@ -9,14 +7,14 @@ type ServicesFormModel = {
   service: string
 }
 
-const api = 'https://api.paginasprofesionales.co'
+const api = import.meta.env.VITE_API
 
 export const formPostServicesPost = (data: ServicesFormModel) => {
   return axios
     .post(`${api}/paginaspro-service/`, data, {
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${apiAccessToken}`
+        Authorization: `Bearer ${api}`
       }
     })
     .then((response) => {
