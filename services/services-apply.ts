@@ -13,7 +13,7 @@ const api = 'https://api.paginasprofesionales.co'
 
 export const formPostServicesPost = (data: ServicesFormModel) => {
   return axios
-    .post(`${api}/paginaspro-services/`, data, {
+    .post(`${api}/paginaspro-service/`, data, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${apiAccessToken}`
