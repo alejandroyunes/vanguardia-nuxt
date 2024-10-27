@@ -2,10 +2,10 @@ import axios from 'axios'
 
 const apiAccessToken = import.meta.env.VITE_API
 
-export type ServicesFormModel = {
+type ServicesFormModel = {
   name: string
   email: string
-  serviceItem: string
+  service_item: string
   service: string
 }
 
