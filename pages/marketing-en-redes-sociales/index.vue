@@ -112,11 +112,11 @@ const servicesCards1 = [
         star: true
       },
       {
-        text: 'Hasta 8 creaciones de publicaciones por mes.',
+        text: 'Hasta 8 creaciones de publicaciones por mes',
         star: true
       },
       {
-        text: 'Publicaciones bilingües/traducciones incluidas.',
+        text: 'Publicaciones bilingües/traducciones incluidas',
       },
       {
         text: 'Post boost',
