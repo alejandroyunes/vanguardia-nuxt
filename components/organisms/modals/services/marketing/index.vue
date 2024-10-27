@@ -7,10 +7,10 @@ import Loading from '~/components/atoms/loading/loading-icon/index.vue'
 import CrossSvg from '~/components/icons/CrossSvg.vue'
 
 import Button from '~/components/atoms/buttons/fill/index.vue'
-import { formPostServicesPost, type ServicesFormModel } from '~/services/services-apply'
+import { formPostServicesPost } from '~/services/services-apply'
 
-const name = ref()
-const email = ref()
+const name = ref('')
+const email = ref('')
 
 const isResponseError = ref(false)
 const isRequestError = ref(false)
@@ -24,20 +24,27 @@ type ServicesMarketingProps = {
   service: string
 }
 
+type ServicesFormModel = {
+  servicesApply: {
+    name: string
+    email: string
+  }
+}
+
 const { toggleModal, serviceItem, service } = defineProps<ServicesMarketingProps>()
 
 const submitHandler = async (form: ServicesFormModel) => {
   isLoading.value = true
   isConfirmInfoVisible.value = true
 
+  const formData = { ...form.servicesApply, serviceItem, service }
+
   try {
     isSuccess.value = false
     isRequestError.value = false
     isResponseError.value = false
 
-    const { name, email } = form
-
-    await formPostServicesPost({ name, email, serviceItem, service })
+    await formPostServicesPost(formData)
 
     isLoading.value = false
     isSuccess.value = true
@@ -75,11 +82,17 @@ const submitHandler = async (form: ServicesFormModel) => {
 
         <FormKit type="form" id="services-modal-form" #default="{ state }" @submit="submitHandler">
 
-          <FormKit type="group" name="contact">
+          <FormKit type="group" name="servicesApply">
            
             <div class="form-group-input">
               <label for="name">Nombre</label>
-              <FormKit type="text" placeholder="Juan Pérez" maxLength="30" minLength="3" v-model="name" name="name"
+              <FormKit
+                type="text"
+                placeholder="Juan Pérez"
+                maxLength="30"
+                minLength="3"
+                v-model="name"
+                name="name"
                 validation="required" />
             </div>
 
@@ -93,7 +106,7 @@ const submitHandler = async (form: ServicesFormModel) => {
                 validation="required|email" />
             </div>
 
-            <Button :disabled="!state.valid" type="submit" text="Quiero la promo" />
+            <Button :disabled="!state.valid" type="submit" text="Solicitar servicio" />
           </FormKit>
 
         </FormKit>
