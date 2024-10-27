@@ -21,9 +21,10 @@ const isConfirmInfoVisible = ref(false)
 type ServicesMarketingProps = {
   toggleModal: () => void
   serviceItem: string
+  service: string
 }
 
-const { toggleModal, serviceItem } = defineProps<ServicesMarketingProps>()
+const { toggleModal, serviceItem, service } = defineProps<ServicesMarketingProps>()
 
 const submitHandler = async (form: ServicesFormModel) => {
   isLoading.value = true
@@ -36,7 +37,7 @@ const submitHandler = async (form: ServicesFormModel) => {
 
     const { name, email } = form
 
-    await formPostServicesPost({ name, email, serviceItem })
+    await formPostServicesPost({ name, email, serviceItem, service })
 
     isLoading.value = false
     isSuccess.value = true

@@ -6,6 +6,7 @@ export type ServicesFormModel = {
   name: string
   email: string
   serviceItem: string
+  service: string
 }
 
 const api = 'https://api.paginasprofesionales.co'
