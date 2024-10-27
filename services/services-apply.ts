@@ -7,14 +7,15 @@ type ServicesFormModel = {
   service: string
 }
 
-const api = import.meta.env.VITE_API
+const apiToken = import.meta.env.VITE_API
+const apiUrl = import.meta.env.VITE_API_URL
 
 export const formPostServicesPost = (data: ServicesFormModel) => {
   return axios
-    .post(`${api}/paginaspro-service/`, data, {
+    .post(`${apiUrl}/paginaspro-service/`, data, {
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${api}`
+        Authorization: `Bearer ${apiToken}`
       }
     })
     .then((response) => {
