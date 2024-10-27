@@ -73,108 +73,66 @@ const iconCards = [
 
 const serviceCards = [
   {
-    title: 'SEO Básico',
-    price: '$1,199.999',
+    title: 'Esencial',
+    price: '$599.999',
     icon: DevelopSvg,
-    iconAlt: 'Paquete SEO Básico - Optimización de Motores de Búsqueda para pequeñas empresas',
+    iconAlt: 'Paquete SEO Esencial - Optimización de Motores de Búsqueda para pequeñas empresas',
     features: [
-      {
-        text: 'Optimización de contenido',
-      },
-      {
-        text: 'Optimización de etiquetas y descripciones',
-      },
-      {
-        text: 'Creación de enlaces incluida',
-      },
-      {
-        text: 'Páginas a optimizar: 1-5',
-        star: true,
-      },
-      {
-        text: 'Palabras clave incluidas: 1-10',
-        star: true,
-      },
-      {
-        text: 'Publicaciones de blog: 1 por año',
-        star: true,
-      },
-      {
-        text: 'Informe de rendimiento: 1 por año',
-        star: true,
-      },
+      { text: 'Optimización de contenido' },
+      { text: 'Optimización de etiquetas y descripciones' },
+      { text: 'Creación de enlaces y site map' },
+      { text: 'Análisis de competencia' },
+      { text: 'Optimización de velocidad de página (básica)' },
+      { text: 'Páginas a optimizar: 1-5', star: true },
+      { text: 'Palabras clave incluidas: 1-10', star: true },
+      { text: 'Monitoreo y reportes mensuales' },
+      { text: 'SEO Técnico Avanzado' },
+      { text: 'Implementación de Schema Markup' },
+      { text: 'Estrategia de contenidos' },
     ],
     cta: 'Solicitar'
   },
   {
-    title: 'SEO Pro',
-    price: '$2,999.999',
+    title: 'Pro',
+    price: '$1,199.999',
     icon: ProSvg,
     iconAlt: 'Paquete SEO Pro - Optimización avanzada de Motores de Búsqueda para medianas empresas',
     features: [
-      {
-        text: 'Optimización de contenido',
-      },
-      {
-        text: 'Optimización de etiquetas y descripciones',
-      },
-      {
-        text: 'Creación de enlaces incluida',
-      },
-      {
-        text: 'Páginas a optimizar: 1-15',
-        star: true,
-      },
-      {
-        text: 'Palabras clave incluidas: 21-40',
-        star: true,
-      },
-      {
-        text: 'Publicaciones de blog: 4 por año',
-        star: true,
-      },
-      {
-        text: 'Informe de rendimiento: 4 por año',
-        star: true,
-      },
+      { text: 'Optimización de contenido' },
+      { text: 'Optimización de etiquetas y descripciones' },
+      { text: 'Creación de enlaces y site map' },
+      { text: 'Análisis de competencia' },
+      { text: 'Optimización de velocidad de página (básica)' },
+      { text: 'Páginas a optimizar: 1-15', star: true },
+      { text: 'Palabras clave incluidas: 21-40', star: true },
+      { text: 'Monitoreo y reportes mensuales' },
+      { text: 'SEO Técnico Avanzado' },
+      { text: 'Implementación de Schema Markup' },
+      { text: 'Estrategia de contenidos' },
     ],
     cta: 'Solicitar'
   },
   {
-    title: 'SEO Premium',
-    price: '$4,999.999',
+    title: 'Premium',
+    price: '$1,999.999',
     icon: PremiumSvg,
     iconAlt: 'Paquete SEO Premium - Estrategia integral de Optimización de Motores de Búsqueda para grandes empresas',
     features: [
-      {
-        text: 'Optimización de contenido',
-      },
-      {
-        text: 'Optimización de etiquetas y descripciones',
-      },
-      {
-        text: 'Creación de enlaces incluida',
-      },
-      {
-        text: 'Páginas a optimizar: 1-20',
-        star: true,
-      },
-      {
-        text: 'Palabras clave incluidas: 41-60',
-        star: true,
-      },
-      {
-        text: 'Publicaciones de blog: 12 por año',
-        star: true,
-      },
-      {
-        text: 'Informe de rendimiento: 4 por año',
-        star: true,
-      },
+    { text: 'Optimización de contenido' },
+      { text: 'Optimización de etiquetas y descripciones' },
+      { text: 'Creación de enlaces y site map' },
+      { text: 'Análisis de competencia' },
+      { text: 'Optimización de velocidad de página (avanzada)' },
+      { text: 'Páginas a optimizar: 1-20', star: true },
+      { text: 'Palabras clave incluidas: 41-60', star: true },
+      { text: 'Monitoreo y reportes mensuales' },
+      { text: 'SEO Técnico Avanzado' },
+      { text: 'Implementación de Schema Markup' },
+      { text: 'Estrategia de contenidos' },
     ],
     cta: 'Solicitar'
   }
-]
+];
 
 </script>
 
