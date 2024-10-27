@@ -1,0 +1,175 @@
+.services-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-transparent);
+  z-index: 11;
+
+  .services-modal-inner {
+    background-color: var(--background);
+    padding: 10px 45px 32px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-card);
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border);
+    margin: 0 20px;
+
+    .services-modal-btn-close {
+      cursor: pointer;
+      position: absolute;
+      top: 16px;
+      right: 24px;
+      font-size: 2rem;
+      color: var(--background);
+      background-color: var(--background-opposite-base);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        fill: var(--background);
+      }
+    }
+  
+    .services-modal-form {
+      margin-top: 40px;
+      width: 100%;
+
+      .services-modal-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading);
+        text-align: center;
+        margin-bottom: 28px;
+        line-height: 2.5rem;
+      }
+
+      .formkit-form .formkit-actions {
+        display: none;
+      }
+    
+      .formkit-messages {
+        list-style-type: none;
+        color: var(--danger);
+        padding: 8px 0 0 0;
+        text-align: center;
+      }
+    
+      .form-group-input {
+        position: relative;
+        margin: 20px 0 40px;
+        width: 100%;
+        
+        label {
+          position: absolute;
+          top: -11px;
+          padding: 0px 5px;
+          background-color: var(--background);
+          left: 10px;
+          font-size: .9rem;
+          color: var(--background-opposite);
+        }
+    
+        .formkit-outer {
+          height: 52px;
+
+          .formkit-wrapper {
+            
+            .formkit-inner {
+              display: flex;
+              align-items: center;
+              
+              input:-webkit-autofill {
+                -webkit-text-fill-color: var(--heading);
+                -webkit-box-shadow: 0 0 0 100px var(--background) inset;
+              }
+    
+              input {
+                cursor: pointer;
+                padding: 10px;
+                width: 100%;
+                border-radius: 4px;
+                color: var(--heading);
+                background-color: transparent;
+                border: 1px solid var(--gray);
+                border-radius: 5px;
+                height: 44px;
+                font-size: 1rem;
+    
+                &:hover {
+                  background-color: var(--background);
+                  outline: none;
+                }
+    
+                &::placeholder {
+                  color: var(--gray-base);
+                  font-size: .9rem;
+                }
+              }
+            }
+          }
+    
+          .formkit-messages {
+            text-align: left;
+            list-style-type: none;
+            color: var(--danger);
+            padding: 4px 0 0 0;
+          }
+    
+        }
+      }
+    }
+
+    .services-modal-info {
+      margin-top: 40px;
+
+      .services-modal-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--heading-soft);
+        text-align: center;
+        margin-bottom: 8px;
+        line-height: 2.5rem;
+      }
+
+      .services-modal-description {
+        font-size: 1rem;
+        color: var(--heading);
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 1.5rem;
+      }
+
+      .submit-btn {
+        margin-top: 32px;
+      }
+    } 
+  
+    @media screen and (max-width: 758px) {
+      padding: 20px 20px 32px;
+
+      .services-modal-info {
+        .services-modal-title {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
