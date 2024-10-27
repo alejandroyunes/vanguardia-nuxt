@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const apiAccessToken = import.meta.env.VITE_API
+const apiAccessToken = import.meta.env.API
 
 type ServicesFormModel = {
   name: string
