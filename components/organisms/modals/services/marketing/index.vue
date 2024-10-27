@@ -25,7 +25,7 @@ type ServicesMarketingProps = {
 }
 
 type ServicesFormModel = {
-  servicesApply: {
+  services: {
     name: string
     email: string
   }
@@ -33,11 +33,15 @@ type ServicesFormModel = {
 
 const { toggleModal, serviceItem, service } = defineProps<ServicesMarketingProps>()
 
-const submitHandler = async (form: ServicesFormModel) => {
+const submitHandler = async (form: ServicesFormModel ) => {
   isLoading.value = true
   isConfirmInfoVisible.value = true
 
-  const formData = { ...form.servicesApply, serviceItem, service }
+  const formData = {
+    ...form.services,
+    service_item: serviceItem,
+    service
+  }
 
   try {
     isSuccess.value = false
@@ -82,7 +86,7 @@ const submitHandler = async (form: ServicesFormModel) => {
 
         <FormKit type="form" id="services-modal-form" #default="{ state }" @submit="submitHandler">
 
-          <FormKit type="group" name="servicesApply">
+          <FormKit type="group" name="services">
            
             <div class="form-group-input">
               <label for="name">Nombre</label>
@@ -134,3 +138,4 @@ const submitHandler = async (form: ServicesFormModel) => {
     </div>
   </section>
 </template>
+

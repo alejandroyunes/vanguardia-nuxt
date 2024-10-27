@@ -34,7 +34,6 @@ const handleClick = (title: string) => {
   itemSelection.value = title
 }
 
-
 </script>
 
 <template>
