@@ -217,6 +217,9 @@ const servicesCards1 = [
     title="Nuestros planes de marketing en redes sociales"
     description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia." />
 
-  <ServicesCards1 :data="servicesCards1" />
+  <ServicesCards1
+    :data="servicesCards1"
+    service="marketing"
+  />
 
 </template>

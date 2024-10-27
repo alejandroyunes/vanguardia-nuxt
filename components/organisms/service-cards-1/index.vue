@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import './service-cards-1.scss'
+import { useRoute } from 'vue-router'
 import Button from '~/components/atoms/buttons/fill/index.vue'
 import LightningSvg from '~/components/icons/LightningSvg.vue'
 import ModalServices from '~/components/organisms/modals/services/marketing/index.vue'
@@ -16,11 +17,12 @@ type ServicesMarketingProps = {
     }[]
     cta: string
   }[]
+  service: string
 }
 
 export type Item = ServicesMarketingProps['data'][number]
 
-const { data } = defineProps<ServicesMarketingProps>()
+const { data, service } = defineProps<ServicesMarketingProps>()
 
 const isModalOpen = ref(false)
 const itemSelection = ref<string | null>(null)
@@ -75,7 +77,7 @@ const handleClick = (title: string) => {
       v-if="isModalOpen && itemSelection" 
       :toggleModal="toggleModal" 
       :serviceItem="itemSelection"
-      :service="'marketing'"
+      :service="service"
     />
 
   </section>

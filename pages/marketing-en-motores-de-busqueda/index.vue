@@ -206,7 +206,10 @@ const serviceCards = [
     description="Diseñados para maximizar tu presencia digital y alcanzar tus objetivos comerciales con precisión y eficacia."
   />
 
-  <ServiceCards :data="serviceCards" />
+  <ServiceCards
+    :data="serviceCards"
+    service="seo"
+  />
 
   <SubTitle
     marginTop
