@@ -7,7 +7,7 @@ import Loading from '~/components/atoms/loading/loading-icon/index.vue'
 import CrossSvg from '~/components/icons/CrossSvg.vue'
 
 import Button from '~/components/atoms/buttons/fill/index.vue'
-import { formPost } from '~/services/FormPostMethod'
+import { formPost } from '~/services/services-apply'
 
 const name = ref()
 const email = ref()

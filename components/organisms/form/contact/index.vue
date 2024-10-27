@@ -4,7 +4,7 @@ import { ref } from 'vue'
 import { AxiosError } from 'axios'
 import { reset } from '@formkit/core'
 import Loading from '~/components/atoms/loading/loading-icon/index.vue'
-import { formPost } from '~/services/FormPostMethod'
+import { formPostServicesPost } from '~/services/services-apply'
 import Button from '~/components/atoms/buttons/fill/index.vue'
 
 const name = ref('')
@@ -34,8 +34,8 @@ const submitHandler = async (createForm: Props) => {
     isRequestError.value = false
     isResponseError.value = false
 
-    const { contact } = createForm
-    await formPost(contact)
+    // const { contact } = createForm
+    // await formPost(contact)
 
     isLoading.value = false
     isSuccess.value = true

@@ -2,8 +2,9 @@
 import './service-cards-1.scss'
 import Button from '~/components/atoms/buttons/fill/index.vue'
 import LightningSvg from '~/components/icons/LightningSvg.vue'
+import ModalServices from '~/components/organisms/modals/services/marketing/index.vue'
 
-type Props = {
+type ServicesMarketingProps = {
   data: {
     title: string
     price: string
@@ -14,12 +15,25 @@ type Props = {
       star?: boolean
     }[]
     cta: string
-    link?: string
-    onClick?: () => void
   }[]
 }
 
-const { data } = defineProps<Props>()
+export type Item = ServicesMarketingProps['data'][number]
+
+const { data } = defineProps<ServicesMarketingProps>()
+
+const isModalOpen = ref(false)
+const itemSelection = ref<string | null>(null)
+
+const toggleModal = () => {
+  isModalOpen.value = !isModalOpen.value
+}
+
+const handleClick = (title: string) => {
+  toggleModal()
+  itemSelection.value = title
+}
+
 
 </script>
 
@@ -54,9 +68,16 @@ const { data } = defineProps<Props>()
 
       </div>
 
-      <Button class="cta" :text="item.cta" :link="item.link" @click="item.onClick" />
+      <Button class="cta" :text="item.cta" @click="handleClick(item.title)" />
 
     </div>
+
+    <ModalServices 
+      v-if="isModalOpen && itemSelection" 
+      :toggleModal="toggleModal" 
+      :serviceItem="itemSelection"
+      :service="'marketing'"
+    />
 
   </section>
 
