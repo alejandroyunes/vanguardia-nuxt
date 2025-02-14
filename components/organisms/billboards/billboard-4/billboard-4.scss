@@ -1,0 +1,33 @@
+.billboard-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  max-width: var(--tablet-width);
+  margin: 80px auto 0;
+  padding: 0 20px;
+  gap: 40px;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      font-size: 3rem;
+      margin-bottom: 4px;
+      line-height: 2.6rem;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      padding-top: 24px;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      letter-spacing: .8px;
+    }
+  }
+
+  @media(max-width: 1024px){
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,53 @@
+.billboard-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 40px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 148px 60px 0;
+  
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    box-shadow: var(--shadow);
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--heading);
+      line-height: 3.5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding: 128px 20px 0;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      max-width: 500px;
+    }
+
+    .details {
+      order: -1;
+    }
+  }
+}

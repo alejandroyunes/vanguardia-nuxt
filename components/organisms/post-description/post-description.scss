@@ -1,0 +1,24 @@
+.post-description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--heading);
+  padding: 0 20px;
+  text-align: start;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: var(--text);
+  max-width: var(--tablet-width);
+  margin: 0 auto;
+
+
+  p {
+    padding-top: 24px;
+  }
+
+  @media (max-width: 756px) {
+    line-height: 1.6rem;
+    padding-top: 16px;
+  }
+}

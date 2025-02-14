@@ -1,0 +1,87 @@
+.animated-show-text {
+  overflow: hidden;
+  position: relative;
+  height: 70px;
+  flex-direction: row;
+
+  h2 {
+    color: var(--heading);
+    font-size: 2.9rem;
+    line-height: 1.5;
+  }
+
+  .message {
+    background-color: var(--primary);
+    color: var(--white);
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    animation: openclose 9s ease-in-out infinite;
+  }
+
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 210px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 210px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 180px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 180px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 210px;
+    }
+    95% {
+      top: -9rem;
+      width: 210px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+}

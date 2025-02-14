@@ -1,0 +1,54 @@
+.billboard-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 148px 60px 0;
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    gap: 16px;
+
+    .title {
+      font-size: 2.5rem;
+      color: var(--heading);
+      line-height: 3.5rem;
+    }
+
+    .conditions {
+      font-size: .9rem;
+      padding-top: 4px;
+      color: var(--text-secondary);
+    }
+
+    .description {
+      font-size: 1.5rem;
+    }
+
+    .learn-more {
+      width: 200px;
+      margin-top: 20px;
+      
+      @media (max-width: 756px) {
+        margin: 20px auto;
+      }
+
+    }
+  }
+
+    svg {
+      height: auto;
+      width: auto;
+    }
+
+    @media (max-width: 756px) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 128px 20px 0;
+  }
+}
