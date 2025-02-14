@@ -43,6 +43,10 @@ const navLinks = [
     iconAlt: 'Marketing de medios sociales'
   },
   {
+    title: 'Portafolio',
+    link: '/portafolio',
+  },
+  {
     title: 'Contacta con soporte',
     link: '/contacta-con-soporte',
       icon: SupportSvg,
@@ -59,7 +63,7 @@ const navLinks = [
     link: '/blog',
     icon: AnnouncementsSvg,
     iconAlt: 'Blog'
-  }
+  },
 ]
 
 const socialLinks = [
