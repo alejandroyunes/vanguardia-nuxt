@@ -11,6 +11,7 @@ import AnnouncementsSvg from '~/components/icons/menu/AnnouncementsSvg.vue'
 import FacebookSvg from '~/components/icons/social/FacebookSvg.vue'
 import TwitterSvg from '~/components/icons/social/TwitterSvg.vue'
 import InstagramSvg from '~/components/icons/social/InstagramSvg.vue'
+import PortfolioSvg from '~/components/icons/PortfolioSvg.vue'
 
 const { toggle, isOpen } = defineProps<{
   toggle: () => void
@@ -45,6 +46,7 @@ const navLinks = [
   {
     title: 'Portafolio',
     link: '/portafolio',
+    icon: PortfolioSvg,
   },
   {
     title: 'Contacta con soporte',
