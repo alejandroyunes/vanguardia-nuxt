@@ -29,6 +29,22 @@ const projects = [
     github: 'https://github.com/alejandroyunes/nuxt-dr-puerta'
   }
 ]
+
+useSeoMeta({
+  title: 'Portafolio de Diseño y Desarrollo Web',
+  description: 'Explora nuestro portafolio de diseño y desarrollo web, con proyectos innovadores y soluciones digitales personalizadas para tu negocio.',
+  ogSiteName: 'Páginas Profesionales',
+  ogTitle: 'Portafolio de Diseño y Desarrollo Web',
+  ogDescription: 'Explora nuestro portafolio de diseño y desarrollo web, con proyectos innovadores y soluciones digitales personalizadas para tu negocio.',
+  ogImage: '/meta/default.webp',
+  ogUrl: 'https://paginasprofesionales.co/portafolio',
+  ogLocale: 'es_CO',
+  twitterTitle: 'Portafolio de Diseño y Desarrollo Web',
+  twitterDescription: 'Explora nuestro portafolio de diseño y desarrollo web, con proyectos innovadores y soluciones digitales personalizadas para tu negocio.',
+  twitterImage: '/meta/default.webp',
+  twitterCard: 'summary_large_image',
+})
+
 </script>
 
 <template>
