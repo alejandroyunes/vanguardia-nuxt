@@ -1,14 +1,15 @@
 <script lang="ts" setup>
 import Title from '~/components/atoms/title-description/index.vue'
 import LinkSvg from '~/components/icons/LinkSvg.vue'
-import GithubSvg from '~/components/icons/Github.vue';
+import GithubSvg from '~/components/icons/Github.vue'
+import SubTitle from '~/components/atoms/subtitle-description/index.vue'
 
 const projects = [
   {
-    title: 'Niche E-Commerce Platform',
+    title: 'Landing Page Nicho',
     description: 'Un sitio web dinámico y especializado para usuarios que buscan irrigadores dentales, que incluye un blog con guías y reseñas.',
     image: '/images/portfolio/portfolio-1.webp',
-    technologies: ['Nuxt.js', 'Node.js', 'SCSS', 'AWS'],
+    technologies: ['Nuxt.js', 'Node.js', 'SCSS', 'SEO'],
     demo: 'https://dental-irrigator.net/',
     github: 'https://github.com/alejandroyunes/nuxt-dental-irrigator'
   },
@@ -16,17 +17,60 @@ const projects = [
     title: 'Plataforma E-commerce',
     description: 'Una plataforma de compra y venta de productos con posibilidad de apostar por el producto solo con el número telefónico.',
     image: '/images/portfolio/portfolio-2.webp',
-    technologies: ['Nuxt.js', 'TypeScript', 'SEO', 'AWS'],
+    technologies: ['Nuxt.js', 'TypeScript', 'SEO', 'MongoDB'],
     demo: 'https://www.epicompras.com/',
     github: 'https://github.com/alejandroyunes/nuxt-dental-irrigator'
   },
   {
-    title: 'Sitio WebDr. Puerta',
+    title: 'Landing Page Dr. Puerta',
     description: 'Un sitio web elegante de la clínica que ofrece información detallada sobre el médico y sus procedimientos.',
     image: '/images/portfolio/portfolio-3.webp',
-    technologies: ['Vue.js', 'OpenWeather API', 'Chart.js', 'SCSS'],
+    technologies: ['Nuxt.js', 'TypeScript', 'SCSS', 'SEO'],
     demo: 'https://www.drpuerta.com/',
     github: 'https://github.com/alejandroyunes/nuxt-dr-puerta'
+  }
+]
+
+const cases = [
+  {
+    title: ' Landing Page Estrella Immobilien',
+    description: 'Sitio web elegante y moderno sobre propiedad raíz y propiedades en venta y alquiler.',
+    image: '/images/portfolio/portfolio-4.webp',
+    technologies: ['Vue.js', 'TypeScript', 'StyleX', 'Vercel'],
+    demo: 'https://vue-scss-inmobiliaria.vercel.app/',
+    github: 'https://github.com/alejandroyunes/inmobiliaria-vue-scss'
+  },
+  {
+    title: 'Landing Page Musical',
+    description: 'Una landing page promocionando artistas y grupos musicales.',
+    image: '/images/portfolio/portfolio-5.webp',
+    technologies: ['Vue.js', 'TypeScript', 'StyleX', 'Vercel'],
+    demo: 'https://vue-scss-music.vercel.app/',
+    github: 'https://github.com/alejandroyunes/vue-scss-music'
+  },
+  {
+    title: 'Landing Page Energias Renovables',
+    description: 'Landing page para una empresa de energías renovables.',
+    image: '/images/portfolio/portfolio-6.webp',
+    technologies: ['Vue.js', 'TypeScript', 'StyleX', 'Vercel'],
+    demo: 'https://vue-scss-solar.vercel.app/',
+    github: 'https://github.com/alejandroyunes/vue-solar'
+  },
+  {
+    title: 'Landing Page banda de Punk Rock',
+    description: 'Landing page para una banda reconocida en Colombia de Punk Rock.',
+    image: '/images/portfolio/portfolio-7.webp',
+    technologies: ['React.js', 'TypeScript', 'Styled Components', 'Vercel'],
+    demo: 'https://punkies-tailwind.vercel.app/',
+    github: 'https://github.com/alejandroyunes/punkies-tailwind'
+  },
+  {
+    title: 'Landing Page Reservas por hora',
+    description: 'Landing page para un caso de estudio sobre reservas por hora.',
+    image: '/images/portfolio/portfolio-8.webp',
+    technologies: ['React.js', 'TypeScript', 'Tailwind', 'Vercel'],
+    demo: 'https://scheduler-gamma-three.vercel.app/',
+    github: 'https://vercel.com/alejandro-yunes-projects/scheduler'
   }
 ]
 
@@ -81,6 +125,41 @@ useSeoMeta({
       </div>
     </div>
   </section>
+
+  <SubTitle title="Casos de estudio" description="Algunos casos de estudio en varias tecnologías." />
+
+  <section class="work">
+    <div class="container">
+
+      <div class="work__grid">
+        <article v-for="project in cases" :key="project.title" class="project">
+          <div class="project__image-wrapper">
+            <NuxtImg :src="project.image" :alt="project.title" class="project__image" />
+          </div>
+          <div class="project__content">
+            <h3 class="project__title">{{ project.title }}</h3>
+            <p class="project__description">{{ project.description }}</p>
+            <ul class="project__tech-stack">
+              <li v-for="tech in project.technologies" :key="tech" class="project__tech">
+                {{ tech }}
+              </li>
+            </ul>
+            <div class="project__links">
+              <NuxtLink :href="project.demo" class="project__link" target="_blank">
+                <LinkSvg />
+                <span>Vista Demo</span>
+              </NuxtLink>
+              <NuxtLink :href="project.github" class="project__link" target="_blank">
+                <GithubSvg />
+                <span>Código Fuente</span>
+              </NuxtLink>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
 </template>
 
 
