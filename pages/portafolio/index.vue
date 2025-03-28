@@ -13,14 +13,14 @@ const projects = [
     demo: 'https://dental-irrigator.net/',
     github: 'https://github.com/alejandroyunes/nuxt-dental-irrigator'
   },
-  {
-    title: 'Plataforma E-commerce',
-    description: 'Una plataforma de compra y venta de productos con posibilidad de apostar por el producto solo con el número telefónico.',
-    image: '/images/portfolio/portfolio-2.webp',
-    technologies: ['Nuxt.js', 'TypeScript', 'SEO', 'MongoDB'],
-    demo: 'https://www.epicompras.com/',
-    github: 'https://github.com/alejandroyunes/nuxt-dental-irrigator'
-  },
+  //{
+   // title: 'Plataforma E-commerce',
+   // description: 'Una plataforma de compra y venta de productos con posibilidad de apostar por el producto solo con el número telefónico.',
+   // image: '/images/portfolio/portfolio-2.webp',
+   // technologies: ['Nuxt.js', 'TypeScript', 'SEO', 'MongoDB'],
+   // demo: 'https://www.epicompras.com/',
+   // github: 'https://github.com/alejandroyunes/nuxt-dental-irrigator'
+  //}
   {
     title: 'Landing Page Dr. Puerta',
     description: 'Un sitio web elegante de la clínica que ofrece información detallada sobre el médico y sus procedimientos.',
